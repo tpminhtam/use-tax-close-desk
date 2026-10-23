@@ -1,0 +1,138 @@
+-- =====================================================================================
+-- 07_governance.sql — entity row access, registration-number masking (agent-aware),
+--                     Cortex AI Guardrails, observability queries.
+-- Run AFTER 06. Policies need Enterprise edition (trial accounts normally are).
+-- Policies on base tables propagate through views, semantic views, Cortex Analyst and Agents
+--   (https://docs.snowflake.com/en/user-guide/views-semantic/best-practices-dev).
+-- Docs: create-row-access-policy, create-masking-policy, cortex-ai-guardrails,
+--   cortex-agents-monitor, get_ai_observability_events (all verified 2026-10-23).
+-- =====================================================================================
+USE ROLE HALIDE_BUILDER;
+USE WAREHOUSE HALIDE_WH;
+USE SCHEMA HALIDE_TAX.CORE;
+
+-- ---------- 1. entity-scoped role: a Japan tax analyst sees only JP --------------------
+USE ROLE ACCOUNTADMIN;
+CREATE ROLE IF NOT EXISTS JP_TAX_ANALYST COMMENT = 'Halide Labs Japan tax analyst: JP rows only';
+GRANT DATABASE ROLE SNOWFLAKE.CORTEX_AGENT_USER TO ROLE JP_TAX_ANALYST;
+GRANT DATABASE ROLE SNOWFLAKE.CORTEX_USER       TO ROLE JP_TAX_ANALYST;
+SET ME = '"' || CURRENT_USER() || '"';
+GRANT ROLE JP_TAX_ANALYST TO USER IDENTIFIER($ME);
+GRANT ROLE JP_TAX_ANALYST TO ROLE SYSADMIN;
+
+USE ROLE HALIDE_BUILDER;
+GRANT USAGE ON WAREHOUSE HALIDE_WH TO ROLE JP_TAX_ANALYST;
+GRANT USAGE ON DATABASE HALIDE_TAX TO ROLE JP_TAX_ANALYST;
+GRANT USAGE ON SCHEMA HALIDE_TAX.CORE  TO ROLE JP_TAX_ANALYST;
+GRANT USAGE ON SCHEMA HALIDE_TAX.AGENT TO ROLE JP_TAX_ANALYST;
+GRANT SELECT ON ALL VIEWS IN SCHEMA HALIDE_TAX.CORE TO ROLE JP_TAX_ANALYST;
+GRANT SELECT ON TABLE HALIDE_TAX.CORE.CURRENCIES TO ROLE JP_TAX_ANALYST;
+GRANT SELECT ON TABLE HALIDE_TAX.AGENT.PROPOSED_JOURNALS TO ROLE JP_TAX_ANALYST;
+GRANT SELECT ON SEMANTIC VIEW HALIDE_TAX.CORE.TAX_CLOSE_SV TO ROLE JP_TAX_ANALYST;
+GRANT USAGE ON CORTEX SEARCH SERVICE HALIDE_TAX.AGENT.POLICY_SEARCH TO ROLE JP_TAX_ANALYST;
+GRANT USAGE ON AGENT HALIDE_TAX.AGENT.USE_TAX_CLOSE_DESK TO ROLE JP_TAX_ANALYST;
+
+-- mapping: which entity-scoped role sees which entity
+CREATE OR REPLACE TABLE HALIDE_TAX.CORE.ENTITY_ACCESS (ROLE_NAME VARCHAR, ENTITY_ID VARCHAR);
+INSERT INTO HALIDE_TAX.CORE.ENTITY_ACCESS VALUES ('JP_TAX_ANALYST', 'JP');
+
+-- global roles see everything; entity roles see their mapped entities only
+CREATE OR REPLACE ROW ACCESS POLICY HALIDE_TAX.CORE.ENTITY_RAP
+  AS (ROW_ENTITY_ID VARCHAR) RETURNS BOOLEAN ->   -- arg name must differ from mapping-table column
+    IS_ROLE_IN_SESSION('HALIDE_BUILDER')
+    OR IS_ROLE_IN_SESSION('TAX_AGENT')          -- TAX_ANALYST and CONTROLLER inherit TAX_AGENT
+    OR EXISTS (SELECT 1 FROM HALIDE_TAX.CORE.ENTITY_ACCESS m
+               WHERE m.ENTITY_ID = ROW_ENTITY_ID AND IS_ROLE_IN_SESSION(m.ROLE_NAME))
+  COMMENT = 'Entity-level row security for Halide Labs tax data';
+
+-- (HALIDE_BUILDER owns the policy and the tables. If ALTER TABLE says insufficient privileges,
+--  run these four as ACCOUNTADMIN or: GRANT APPLY ROW ACCESS POLICY ON ACCOUNT TO ROLE HALIDE_BUILDER;)
+ALTER TABLE HALIDE_TAX.RAW.DOCUMENTS       ADD ROW ACCESS POLICY HALIDE_TAX.CORE.ENTITY_RAP ON (ENTITY_ID);
+ALTER TABLE HALIDE_TAX.RAW.JOURNAL_LINES   ADD ROW ACCESS POLICY HALIDE_TAX.CORE.ENTITY_RAP ON (ENTITY_ID);
+ALTER TABLE HALIDE_TAX.RAW.JOURNAL_ENTRIES ADD ROW ACCESS POLICY HALIDE_TAX.CORE.ENTITY_RAP ON (ENTITY_ID);
+ALTER TABLE HALIDE_TAX.RAW.ENTITIES        ADD ROW ACCESS POLICY HALIDE_TAX.CORE.ENTITY_RAP ON (ID);
+-- (TAX_LINES has no entity column; CORE.TAX_LINES joins DOCUMENTS, so it is filtered too.)
+-- To undo:  ALTER TABLE HALIDE_TAX.RAW.DOCUMENTS DROP ROW ACCESS POLICY HALIDE_TAX.CORE.ENTITY_RAP;
+
+-- test: same query, two roles.
+-- ⚠ Secondary roles default to ALL for most users: with them on, IS_ROLE_IN_SESSION sees ALL your
+--   roles and the JP role would see everything. Turn them off for role tests and demos:
+USE SECONDARY ROLES NONE;
+USE ROLE TAX_ANALYST;
+SELECT ENTITY_ID, COUNT(*) FROM HALIDE_TAX.CORE.SUPPLIER_INVOICES GROUP BY 1 ORDER BY 1;   -- IE 5, JP 6, SG 2, US 15
+USE ROLE JP_TAX_ANALYST;
+SELECT ENTITY_ID, COUNT(*) FROM HALIDE_TAX.CORE.SUPPLIER_INVOICES GROUP BY 1 ORDER BY 1;   -- JP 6 only
+-- and through Cortex Analyst / the agent (policy propagates):
+SELECT * FROM SEMANTIC_VIEW(HALIDE_TAX.CORE.TAX_CLOSE_SV
+  DIMENSIONS ent.entity_name, si.invoice_currency METRICS si.total_vendor_tax_charged);   -- JP / JPY 1,020,000 only
+
+-- ---------- 2. masking: tax registration numbers -------------------------------------
+USE ROLE HALIDE_BUILDER;
+CREATE OR REPLACE VIEW HALIDE_TAX.CORE.REGISTRATIONS
+  COMMENT = 'Tax registrations of Halide Labs entities and its counterparties'
+AS SELECT OWNER_KIND, OWNER_ID, REGIME, JURISDICTION, NUMBER AS REGISTRATION_NUMBER,
+          SCHEME, VALIDATION_STATUS, EFFECTIVE_FROM
+   FROM HALIDE_TAX.RAW.REGISTRATIONS;
+GRANT SELECT ON VIEW HALIDE_TAX.CORE.REGISTRATIONS TO ROLE TAX_AGENT;
+GRANT SELECT ON VIEW HALIDE_TAX.CORE.REGISTRATIONS TO ROLE JP_TAX_ANALYST;
+
+-- Humans on the tax team see full numbers; anything running inside a Cortex Agent or MCP
+-- session (IS_AGENT_ACTIVATED) and other roles see only the last 4 characters.
+-- VERIFY: SYS_CONTEXT('SNOWFLAKE$CURRENT','IS_AGENT_ACTIVATED') — returns BOOLEAN after BCR 2026_06,
+--   'TRUE'/'FALSE' before; ::BOOLEAN handles both. If the function errors in your account, use the
+--   simpler body in the comment below.
+CREATE OR REPLACE MASKING POLICY HALIDE_TAX.CORE.MASK_REGISTRATION
+  AS (VAL VARCHAR) RETURNS VARCHAR ->
+    CASE
+      WHEN IS_ROLE_IN_SESSION('HALIDE_BUILDER') THEN VAL
+      WHEN COALESCE(SYS_CONTEXT('SNOWFLAKE$CURRENT', 'IS_AGENT_ACTIVATED')::BOOLEAN, FALSE)
+        THEN REPEAT('*', GREATEST(LENGTH(VAL) - 4, 0)) || RIGHT(VAL, 4)
+      WHEN IS_ROLE_IN_SESSION('TAX_ANALYST') THEN VAL
+      ELSE REPEAT('*', GREATEST(LENGTH(VAL) - 4, 0)) || RIGHT(VAL, 4)
+    END
+  COMMENT = 'Registration numbers: full for tax humans; last 4 only for agents/MCP and other roles';
+-- simpler fallback body:
+--   CASE WHEN IS_ROLE_IN_SESSION('TAX_ANALYST') OR IS_ROLE_IN_SESSION('HALIDE_BUILDER') THEN VAL
+--        ELSE REPEAT('*', GREATEST(LENGTH(VAL) - 4, 0)) || RIGHT(VAL, 4) END
+-- (if insufficient privileges: GRANT APPLY MASKING POLICY ON ACCOUNT TO ROLE HALIDE_BUILDER; as ACCOUNTADMIN)
+ALTER TABLE HALIDE_TAX.RAW.REGISTRATIONS MODIFY COLUMN NUMBER SET MASKING POLICY HALIDE_TAX.CORE.MASK_REGISTRATION;
+
+USE SECONDARY ROLES NONE;
+USE ROLE TAX_ANALYST;
+SELECT OWNER_ID, REGIME, REGISTRATION_NUMBER FROM HALIDE_TAX.CORE.REGISTRATIONS LIMIT 5;  -- full
+USE ROLE JP_TAX_ANALYST;
+SELECT OWNER_ID, REGIME, REGISTRATION_NUMBER FROM HALIDE_TAX.CORE.REGISTRATIONS LIMIT 5;  -- masked
+
+-- ---------- 3. Cortex AI Guardrails (prompt injection / jailbreak) -------------------
+-- Account-level, ACCOUNTADMIN, Enterprise edition, needs cross-region on (done in 00).
+-- Scans tool outputs (e.g. vendor-supplied text) for indirect prompt injection. Billed per token.
+USE ROLE ACCOUNTADMIN;
+ALTER ACCOUNT SET AI_SETTINGS = $$
+guardrails:
+  advanced_prompt_injection:
+    - enabled: true
+$$;
+SHOW PARAMETERS LIKE 'AI_SETTINGS' IN ACCOUNT;
+-- undo: ALTER ACCOUNT UNSET AI_SETTINGS;
+-- signals (ACCOUNT_USAGE has latency, up to a few hours):
+-- SELECT * FROM SNOWFLAKE.ACCOUNT_USAGE.CORTEX_AI_GUARDRAILS_USAGE_HISTORY
+--  WHERE GUARDRAILS_SIGNAL = TRUE AND USAGE_TIME >= DATEADD('hour', -72, CURRENT_TIMESTAMP()) LIMIT 100;
+
+-- ---------- 4. observability: traces of every agent turn -----------------------------
+GRANT MONITOR ON AGENT HALIDE_TAX.AGENT.USE_TAX_CLOSE_DESK TO ROLE CONTROLLER;
+GRANT READ UNREDACTED AI OBSERVABILITY EVENTS TABLE ON ACCOUNT TO ROLE HALIDE_BUILDER;  -- see tool inputs/outputs, not just metadata
+USE ROLE HALIDE_BUILDER;
+SELECT TIMESTAMP, RECORD:name::VARCHAR AS SPAN, RECORD_ATTRIBUTES, VALUE
+FROM TABLE(SNOWFLAKE.LOCAL.GET_AI_OBSERVABILITY_EVENTS(
+  'HALIDE_TAX', 'AGENT', 'USE_TAX_CLOSE_DESK', 'CORTEX AGENT'))
+ORDER BY TIMESTAMP DESC
+LIMIT 50;
+-- user thumbs-up/down feedback:  ... WHERE RECORD:name = 'CORTEX_AGENT_FEEDBACK'
+-- UI: Snowsight » AI & ML » Agents » USE_TAX_CLOSE_DESK » Monitoring.
+
+-- the business audit trail (our own table, written by the procedures):
+SELECT EVENT_TS, ACTOR_USER, ACTOR_ROLE, ACTION, SOURCE_DOCUMENT, OBJECT_ID, OUTCOME
+FROM HALIDE_TAX.AGENT.AUDIT_LOG ORDER BY EVENT_ID DESC;
+-- agent-originated queries in query history:
+-- SELECT QUERY_TEXT, USER_NAME, ROLE_NAME, AGENT_TYPE FROM SNOWFLAKE.ACCOUNT_USAGE.QUERY_HISTORY
+--  WHERE AGENT_TYPE IS NOT NULL ORDER BY START_TIME DESC LIMIT 20;   -- VERIFY column name agent_type

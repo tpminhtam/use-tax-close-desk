@@ -1,0 +1,25 @@
+owner_kind,owner_id,regime,jurisdiction,number,scheme,validation_status,effective_from
+party,C-ALPEN,CH_VAT,CH,CHE-116.281.710 MWST,domestic,valid,2025-01-01
+party,C-BENGALURU,IN_GST,IN,29AAHCB4471K1Z3,domestic,valid,2025-01-01
+party,C-DUBLINDYN,EU_VAT,IE,IE 6388047V,domestic,valid,2025-01-01
+party,C-MERIDIAN,UK_VAT,GB,GB 288 1947 36,domestic,valid,2025-01-01
+party,C-ORCHID,SG_GST,SG,201934567M,domestic,valid,2025-01-01
+party,C-REEF,AU_GST,AU,ABN 51 824 753 556,domestic,valid,2025-01-01
+party,C-RHEINWERK,EU_VAT,DE,DE 814 562 339,domestic,valid,2025-01-01
+party,C-SAKURA,JP_JCT,JP,T7010401099875,domestic,valid,2025-01-01
+party,C-VANDENBERG,EU_VAT,NL,NL 8612.34.550.B01,domestic,unvalidated,2025-01-01
+entity,IE,EU_VAT,EU,IE3847221FH,union_oss,valid,2024-10-01
+entity,IE,UK_VAT,GB,GB 402 8812 51,non_established,valid,2024-10-01
+entity,IE,EU_VAT,IE,IE3847221FH,domestic,valid,2024-09-01
+entity,JP,JP_JCT,JP,T4011001152840,qualified_invoice_issuer,valid,2025-04-01
+party,S-LEDGERLINE,UK_VAT,GB,GB 594 3321 07,domestic,valid,2023-10-01
+party,S-LIFFEY,EU_VAT,IE,IE 3312954LH,domestic,valid,2023-10-01
+party,S-MARUNOUCHI,JP_JCT,JP,T2010001034531,domestic,valid,2023-10-01
+party,S-POWERCOOL,EU_VAT,DE,DE 297 441 018,domestic,valid,2023-10-01
+party,S-STRAITS,SG_GST,SG,M2-0112345-6,domestic,valid,2023-10-01
+entity,SG,SG_GST,SG,M90377148K,domestic,valid,2025-06-01
+entity,US,AU_GST,AU,ARN 3000 1552 8841,simplified,valid,2025-01-01
+entity,US,US_SUT,US-CA,CA-SR-102-448812,domestic,valid,2023-01-01
+entity,US,US_SUT,US-NY,NY-ST-884120331,domestic,valid,2024-03-01
+entity,US,US_SUT,US-TX,TX-32088124451,domestic,valid,2024-06-01
+entity,US,US_SUT,US-WA,WA-UBI-604812223,domestic,valid,2024-06-01

@@ -1,0 +1,609 @@
+document_number,line_ref,regime,jurisdiction_code,jurisdiction_name,level,tax_type,treatment,taxable_base_minor,rate,tax_minor,accrual,vendor_charged_minor,rule_id,match_level
+SINV-US-2026-000001,23,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,0,US-P-DOMESTIC,4
+SINV-US-2026-000001,24,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,0,US-P-DOMESTIC,4
+SINV-US-2026-000002,25,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales_use,use_tax_accrual,3840000,0.082500,316800,True,0,US-P-DOMESTIC,4
+SINV-US-2026-000003,26,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,0,US-P-DOMESTIC,4
+SINV-US-2026-000004,27,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,0,US-P-DOMESTIC,4
+SINV-US-2026-000005,28,US_SUT,US,"San Francisco, CA, US",country,sales,out_of_scope,21000000,0.000000,0,False,,US-P-IMPORT-SERVICES,3
+SINV-US-2026-000006,29,US_SUT,US,"San Francisco, CA, US",country,sales,out_of_scope,12000000,0.000000,0,False,,US-P-IMPORT-SERVICES,3
+SINV-IE-2026-000001,30,EU_VAT,IE,Ireland,country,vat,reverse_charge,1800000,0.230000,414000,True,,IE-P-RC-NONEU-SERVICES,3
+SINV-IE-2026-000002,31,EU_VAT,IE,Ireland,country,vat,vendor_charged,8500000,0.230000,1955000,False,1955000,IE-P-DOMESTIC,4
+SINV-IE-2026-000003,34,EU_VAT,IE,Ireland,country,vat,acquisition_vat,240000000,0.230000,55200000,True,,IE-P-ICA-GOODS,3
+SINV-JP-2026-000001,35,JP_JCT,JP,Japan,combined,jct,vendor_charged,3200000,0.100000,320000,False,320000,JP-P-QUALIFIED,2
+SINV-JP-2026-000002,36,JP_JCT,JP,Japan,combined,jct,vendor_charged,180000,0.100000,18000,False,18000,JP-P-NON-QUALIFIED,2
+SINV-SG-2026-000001,37,SG_GST,SG,Singapore,country,gst,vendor_charged,24000000,0.090000,2160000,False,2160000,SG-P-DOMESTIC,4
+CINV-US-2026-000001,60,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,1045654,0.088750,92802,False,,US-S-REGISTERED,5
+CINV-US-2026-000001,61,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,1612976,0.088750,143152,False,,US-S-REGISTERED,5
+CINV-US-2026-000001,62,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,10222323,0.088750,907231,False,,US-S-REGISTERED,5
+CINV-US-2026-000001,63,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,13716896,0.088750,1217375,False,,US-S-REGISTERED,5
+CINV-US-2026-000001,64,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,671914,0.088750,59632,False,,US-S-REGISTERED,5
+CINV-US-2026-000001,65,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,1007559,0.088750,89421,False,,US-S-REGISTERED,5
+CINV-US-2026-000001,66,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,6217042,0.088750,551762,False,,US-S-REGISTERED,5
+CINV-US-2026-000001,67,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,8674512,0.088750,769863,False,,US-S-REGISTERED,5
+CINV-US-2026-000001,68,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,195585,0.088750,17358,False,,US-S-REGISTERED,5
+CINV-US-2026-000001,69,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,276294,0.088750,24521,False,,US-S-REGISTERED,5
+CINV-US-2026-000001,70,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,1818298,0.088750,161374,False,,US-S-REGISTERED,5
+CINV-US-2026-000001,71,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,2488204,0.088750,220828,False,,US-S-REGISTERED,5
+CINV-US-2026-000002,74,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,488029,0.103500,50511,False,,US-S-REGISTERED,5
+CINV-US-2026-000002,75,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,731464,0.103500,75707,False,,US-S-REGISTERED,5
+CINV-US-2026-000002,76,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,4611792,0.103500,477320,False,,US-S-REGISTERED,5
+CINV-US-2026-000002,77,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,6319849,0.103500,654104,False,,US-S-REGISTERED,5
+CINV-US-2026-000002,78,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,309103,0.103500,31992,False,,US-S-REGISTERED,5
+CINV-US-2026-000002,79,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,452848,0.103500,46870,False,,US-S-REGISTERED,5
+CINV-US-2026-000002,80,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,2959824,0.103500,306342,False,,US-S-REGISTERED,5
+CINV-US-2026-000002,81,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,3920179,0.103500,405738,False,,US-S-REGISTERED,5
+CINV-US-2026-000002,82,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,84928,0.103500,8790,False,,US-S-REGISTERED,5
+CINV-US-2026-000002,83,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,133998,0.103500,13869,False,,US-S-REGISTERED,5
+CINV-US-2026-000002,84,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,862083,0.103500,89226,False,,US-S-REGISTERED,5
+CINV-US-2026-000002,85,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,1149394,0.103500,118962,False,,US-S-REGISTERED,5
+CINV-US-2026-000003,86,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,exempt,106102,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000003,87,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,exempt,150359,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000003,88,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,exempt,964440,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000003,89,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,exempt,1336066,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000003,90,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,exempt,67310,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000003,91,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,exempt,101735,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000003,92,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,exempt,633889,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000003,93,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,exempt,867753,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000003,94,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,exempt,19707,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000003,95,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,exempt,28454,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000003,96,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,exempt,185416,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000003,97,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,exempt,254574,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000004,98,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,482677,0.082500,39821,False,,US-S-REGISTERED,5
+CINV-US-2026-000004,99,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,1465249,0.082500,120883,False,,US-S-REGISTERED,5
+CINV-US-2026-000004,100,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,712150,0.082500,58752,False,,US-S-REGISTERED,5
+CINV-US-2026-000004,101,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,2149106,0.082500,177301,False,,US-S-REGISTERED,5
+CINV-US-2026-000004,102,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,4594956,0.082500,379084,False,,US-S-REGISTERED,5
+CINV-US-2026-000004,103,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,13528534,0.082500,1116104,False,,US-S-REGISTERED,5
+CINV-US-2026-000004,104,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,6250014,0.082500,515626,False,,US-S-REGISTERED,5
+CINV-US-2026-000004,105,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,19168379,0.082500,1581391,False,,US-S-REGISTERED,5
+CINV-US-2026-000004,106,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,314830,0.082500,25974,False,,US-S-REGISTERED,5
+CINV-US-2026-000004,107,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,925074,0.082500,76319,False,,US-S-REGISTERED,5
+CINV-US-2026-000004,108,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,468458,0.082500,38648,False,,US-S-REGISTERED,5
+CINV-US-2026-000004,109,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,1369795,0.082500,113008,False,,US-S-REGISTERED,5
+CINV-US-2026-000004,110,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,3009311,0.082500,248268,False,,US-S-REGISTERED,5
+CINV-US-2026-000004,111,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,8632818,0.082500,712207,False,,US-S-REGISTERED,5
+CINV-US-2026-000004,112,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,3991134,0.082500,329269,False,,US-S-REGISTERED,5
+CINV-US-2026-000004,113,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,12112782,0.082500,999305,False,,US-S-REGISTERED,5
+CINV-US-2026-000004,114,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,88518,0.082500,7303,False,,US-S-REGISTERED,5
+CINV-US-2026-000004,115,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,262052,0.082500,21619,False,,US-S-REGISTERED,5
+CINV-US-2026-000004,116,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,134160,0.082500,11068,False,,US-S-REGISTERED,5
+CINV-US-2026-000004,117,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,391655,0.082500,32312,False,,US-S-REGISTERED,5
+CINV-US-2026-000004,118,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,827382,0.082500,68259,False,,US-S-REGISTERED,5
+CINV-US-2026-000004,119,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,2500267,0.082500,206272,False,,US-S-REGISTERED,5
+CINV-US-2026-000004,120,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,1146598,0.082500,94594,False,,US-S-REGISTERED,5
+CINV-US-2026-000004,121,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,3392838,0.082500,279909,False,,US-S-REGISTERED,5
+CINV-US-2026-000004,122,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,9600000,0.082500,792000,False,,US-S-REGISTERED,5
+CINV-US-2026-000005,123,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000005,124,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000005,125,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000005,126,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000005,127,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000005,128,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000005,129,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000005,130,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000005,131,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000005,132,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000005,133,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000005,134,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000005,135,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000005,136,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000005,137,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000005,138,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000005,139,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000005,140,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000005,141,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000005,142,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000005,143,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000005,144,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000005,145,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000005,146,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000006,147,US_SUT,US,"Chicago, IL, US",country,sales,not_registered,343575,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000006,148,US_SUT,US,"Chicago, IL, US",country,sales,not_registered,490398,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000006,149,US_SUT,US,"Chicago, IL, US",country,sales,not_registered,3126636,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000006,150,US_SUT,US,"Chicago, IL, US",country,sales,not_registered,4300394,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000006,151,US_SUT,US,"Chicago, IL, US",country,sales,not_registered,210679,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000006,152,US_SUT,US,"Chicago, IL, US",country,sales,not_registered,323020,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000006,153,US_SUT,US,"Chicago, IL, US",country,sales,not_registered,1947888,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000006,154,US_SUT,US,"Chicago, IL, US",country,sales,not_registered,2723150,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000006,155,US_SUT,US,"Chicago, IL, US",country,sales,not_registered,58557,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000006,156,US_SUT,US,"Chicago, IL, US",country,sales,not_registered,89247,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000006,157,US_SUT,US,"Chicago, IL, US",country,sales,not_registered,566484,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000006,158,US_SUT,US,"Chicago, IL, US",country,sales,not_registered,770151,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000007,159,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,943979,0.088750,83778,False,,US-S-REGISTERED,5
+CINV-US-2026-000007,160,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,1385001,0.088750,122919,False,,US-S-REGISTERED,5
+CINV-US-2026-000007,161,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,8839281,0.088750,784486,False,,US-S-REGISTERED,5
+CINV-US-2026-000007,162,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,12204598,0.088750,1083158,False,,US-S-REGISTERED,5
+CINV-US-2026-000007,163,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,600485,0.088750,53293,False,,US-S-REGISTERED,5
+CINV-US-2026-000007,164,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,867094,0.088750,76955,False,,US-S-REGISTERED,5
+CINV-US-2026-000007,165,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,5809105,0.088750,515558,False,,US-S-REGISTERED,5
+CINV-US-2026-000007,166,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,7689530,0.088750,682446,False,,US-S-REGISTERED,5
+CINV-US-2026-000007,167,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,171113,0.088750,15186,False,,US-S-REGISTERED,5
+CINV-US-2026-000007,168,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,251215,0.088750,22295,False,,US-S-REGISTERED,5
+CINV-US-2026-000007,169,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,1629149,0.088750,144587,False,,US-S-REGISTERED,5
+CINV-US-2026-000007,170,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,2179779,0.088750,193456,False,,US-S-REGISTERED,5
+CINV-US-2026-000008,171,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,811916,0.088750,72058,False,,US-S-REGISTERED,5
+CINV-US-2026-000008,172,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,1238776,0.088750,109941,False,,US-S-REGISTERED,5
+CINV-US-2026-000008,173,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,7935729,0.088750,704296,False,,US-S-REGISTERED,5
+CINV-US-2026-000008,174,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,10900701,0.088750,967437,False,,US-S-REGISTERED,5
+CINV-US-2026-000008,175,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,527596,0.088750,46824,False,,US-S-REGISTERED,5
+CINV-US-2026-000008,176,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,775638,0.088750,68838,False,,US-S-REGISTERED,5
+CINV-US-2026-000008,177,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,5087243,0.088750,451493,False,,US-S-REGISTERED,5
+CINV-US-2026-000008,178,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,6877252,0.088750,610356,False,,US-S-REGISTERED,5
+CINV-US-2026-000008,179,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,154051,0.088750,13672,False,,US-S-REGISTERED,5
+CINV-US-2026-000008,180,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,226964,0.088750,20143,False,,US-S-REGISTERED,5
+CINV-US-2026-000008,181,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,1454735,0.088750,129108,False,,US-S-REGISTERED,5
+CINV-US-2026-000008,182,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,1988861,0.088750,176511,False,,US-S-REGISTERED,5
+CINV-US-2026-000009,183,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,678999,0.103500,70276,False,,US-S-REGISTERED,5
+CINV-US-2026-000009,184,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,1015195,0.103500,105073,False,,US-S-REGISTERED,5
+CINV-US-2026-000009,185,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,6444227,0.103500,666977,False,,US-S-REGISTERED,5
+CINV-US-2026-000009,186,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,8842015,0.103500,915149,False,,US-S-REGISTERED,5
+CINV-US-2026-000009,187,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,442298,0.103500,45778,False,,US-S-REGISTERED,5
+CINV-US-2026-000009,188,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,649491,0.103500,67222,False,,US-S-REGISTERED,5
+CINV-US-2026-000009,189,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,4040776,0.103500,418220,False,,US-S-REGISTERED,5
+CINV-US-2026-000009,190,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,5662979,0.103500,586118,False,,US-S-REGISTERED,5
+CINV-US-2026-000009,191,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,123871,0.103500,12821,False,,US-S-REGISTERED,5
+CINV-US-2026-000009,192,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,186391,0.103500,19292,False,,US-S-REGISTERED,5
+CINV-US-2026-000009,193,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,1164408,0.103500,120516,False,,US-S-REGISTERED,5
+CINV-US-2026-000009,194,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,1623584,0.103500,168041,False,,US-S-REGISTERED,5
+CINV-US-2026-000010,195,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,taxable,328162,0.082500,27073,False,,US-S-REGISTERED,5
+CINV-US-2026-000010,196,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,taxable,508492,0.082500,41951,False,,US-S-REGISTERED,5
+CINV-US-2026-000010,197,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,taxable,3137605,0.082500,258852,False,,US-S-REGISTERED,5
+CINV-US-2026-000010,198,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,taxable,4260078,0.082500,351456,False,,US-S-REGISTERED,5
+CINV-US-2026-000010,199,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,taxable,213807,0.082500,17639,False,,US-S-REGISTERED,5
+CINV-US-2026-000010,200,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,taxable,312667,0.082500,25795,False,,US-S-REGISTERED,5
+CINV-US-2026-000010,201,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,taxable,2041622,0.082500,168434,False,,US-S-REGISTERED,5
+CINV-US-2026-000010,202,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,taxable,2751069,0.082500,226963,False,,US-S-REGISTERED,5
+CINV-US-2026-000010,203,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,taxable,60204,0.082500,4967,False,,US-S-REGISTERED,5
+CINV-US-2026-000010,204,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,taxable,91141,0.082500,7519,False,,US-S-REGISTERED,5
+CINV-US-2026-000010,205,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,taxable,569437,0.082500,46979,False,,US-S-REGISTERED,5
+CINV-US-2026-000010,206,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,taxable,787224,0.082500,64946,False,,US-S-REGISTERED,5
+CINV-US-2026-000011,207,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000011,208,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000011,209,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000011,210,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000011,211,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000011,212,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000011,213,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000011,214,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000011,215,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000011,216,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000011,217,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000011,218,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000011,219,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000011,220,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000011,221,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000011,222,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000011,223,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000011,224,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000011,225,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000011,226,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000011,227,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000011,228,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000011,229,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000011,230,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000012,231,US_SUT,US,"Boston, MA, US",country,sales,not_registered,586238,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000012,232,US_SUT,US,"Boston, MA, US",country,sales,not_registered,843892,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000012,233,US_SUT,US,"Boston, MA, US",country,sales,not_registered,5443502,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000012,234,US_SUT,US,"Boston, MA, US",country,sales,not_registered,7394013,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000012,235,US_SUT,US,"Boston, MA, US",country,sales,not_registered,366483,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000012,236,US_SUT,US,"Boston, MA, US",country,sales,not_registered,538115,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000012,237,US_SUT,US,"Boston, MA, US",country,sales,not_registered,3412787,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000012,238,US_SUT,US,"Boston, MA, US",country,sales,not_registered,4691932,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000012,239,US_SUT,US,"Boston, MA, US",country,sales,not_registered,103146,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000012,240,US_SUT,US,"Boston, MA, US",country,sales,not_registered,157837,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000012,241,US_SUT,US,"Boston, MA, US",country,sales,not_registered,984505,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000012,242,US_SUT,US,"Boston, MA, US",country,sales,not_registered,1326662,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000013,243,US_SUT,US,"Denver, CO, US",country,sales,not_registered,207066,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000013,244,US_SUT,US,"Denver, CO, US",country,sales,not_registered,309263,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000013,245,US_SUT,US,"Denver, CO, US",country,sales,not_registered,1941687,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000013,246,US_SUT,US,"Denver, CO, US",country,sales,not_registered,2670346,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000013,247,US_SUT,US,"Denver, CO, US",country,sales,not_registered,129110,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000013,248,US_SUT,US,"Denver, CO, US",country,sales,not_registered,199720,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000013,249,US_SUT,US,"Denver, CO, US",country,sales,not_registered,1299717,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000013,250,US_SUT,US,"Denver, CO, US",country,sales,not_registered,1771670,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000013,251,US_SUT,US,"Denver, CO, US",country,sales,not_registered,37471,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000013,252,US_SUT,US,"Denver, CO, US",country,sales,not_registered,57376,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000013,253,US_SUT,US,"Denver, CO, US",country,sales,not_registered,374067,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000013,254,US_SUT,US,"Denver, CO, US",country,sales,not_registered,489996,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000014,255,IN_GST,IN,"Bengaluru, KA, IN",country,gst,reverse_charge,394269,0.000000,0,False,,IN-S-B2B-RCM,4
+CINV-US-2026-000014,256,IN_GST,IN,"Bengaluru, KA, IN",country,gst,reverse_charge,592553,0.000000,0,False,,IN-S-B2B-RCM,4
+CINV-US-2026-000014,257,IN_GST,IN,"Bengaluru, KA, IN",country,gst,reverse_charge,3766751,0.000000,0,False,,IN-S-B2B-RCM,4
+CINV-US-2026-000014,258,IN_GST,IN,"Bengaluru, KA, IN",country,gst,reverse_charge,5128537,0.000000,0,False,,IN-S-B2B-RCM,4
+CINV-US-2026-000014,259,IN_GST,IN,"Bengaluru, KA, IN",country,gst,reverse_charge,248269,0.000000,0,False,,IN-S-B2B-RCM,4
+CINV-US-2026-000014,260,IN_GST,IN,"Bengaluru, KA, IN",country,gst,reverse_charge,374487,0.000000,0,False,,IN-S-B2B-RCM,4
+CINV-US-2026-000014,261,IN_GST,IN,"Bengaluru, KA, IN",country,gst,reverse_charge,2394729,0.000000,0,False,,IN-S-B2B-RCM,4
+CINV-US-2026-000014,262,IN_GST,IN,"Bengaluru, KA, IN",country,gst,reverse_charge,3260628,0.000000,0,False,,IN-S-B2B-RCM,4
+CINV-US-2026-000014,263,IN_GST,IN,"Bengaluru, KA, IN",country,gst,reverse_charge,72723,0.000000,0,False,,IN-S-B2B-RCM,4
+CINV-US-2026-000014,264,IN_GST,IN,"Bengaluru, KA, IN",country,gst,reverse_charge,108340,0.000000,0,False,,IN-S-B2B-RCM,4
+CINV-US-2026-000014,265,IN_GST,IN,"Bengaluru, KA, IN",country,gst,reverse_charge,665845,0.000000,0,False,,IN-S-B2B-RCM,4
+CINV-US-2026-000014,266,IN_GST,IN,"Bengaluru, KA, IN",country,gst,reverse_charge,916784,0.000000,0,False,,IN-S-B2B-RCM,4
+CINV-US-2026-000015,267,AU_GST,AU,"Sydney, NSW, AU",country,gst,out_of_scope,196939,0.000000,0,False,,AU-S-B2B,2
+CINV-US-2026-000015,268,AU_GST,AU,"Sydney, NSW, AU",country,gst,out_of_scope,298052,0.000000,0,False,,AU-S-B2B,2
+CINV-US-2026-000015,269,AU_GST,AU,"Sydney, NSW, AU",country,gst,out_of_scope,1898834,0.000000,0,False,,AU-S-B2B,2
+CINV-US-2026-000015,270,AU_GST,AU,"Sydney, NSW, AU",country,gst,out_of_scope,2560650,0.000000,0,False,,AU-S-B2B,2
+CINV-US-2026-000015,271,AU_GST,AU,"Sydney, NSW, AU",country,gst,out_of_scope,120595,0.000000,0,False,,AU-S-B2B,2
+CINV-US-2026-000015,272,AU_GST,AU,"Sydney, NSW, AU",country,gst,out_of_scope,189747,0.000000,0,False,,AU-S-B2B,2
+CINV-US-2026-000015,273,AU_GST,AU,"Sydney, NSW, AU",country,gst,out_of_scope,1181836,0.000000,0,False,,AU-S-B2B,2
+CINV-US-2026-000015,274,AU_GST,AU,"Sydney, NSW, AU",country,gst,out_of_scope,1640333,0.000000,0,False,,AU-S-B2B,2
+CINV-US-2026-000015,275,AU_GST,AU,"Sydney, NSW, AU",country,gst,out_of_scope,35189,0.000000,0,False,,AU-S-B2B,2
+CINV-US-2026-000015,276,AU_GST,AU,"Sydney, NSW, AU",country,gst,out_of_scope,54982,0.000000,0,False,,AU-S-B2B,2
+CINV-US-2026-000015,277,AU_GST,AU,"Sydney, NSW, AU",country,gst,out_of_scope,342649,0.000000,0,False,,AU-S-B2B,2
+CINV-US-2026-000015,278,AU_GST,AU,"Sydney, NSW, AU",country,gst,out_of_scope,461348,0.000000,0,False,,AU-S-B2B,2
+CINV-IE-2026-000001,279,UK_VAT,GB,"London, ENG, GB",country,vat,reverse_charge,1999472,0.000000,0,False,,UK-S-B2B-RC,1
+CINV-IE-2026-000001,280,UK_VAT,GB,"London, ENG, GB",country,vat,reverse_charge,2929377,0.000000,0,False,,UK-S-B2B-RC,1
+CINV-IE-2026-000001,281,UK_VAT,GB,"London, ENG, GB",country,vat,reverse_charge,18738861,0.000000,0,False,,UK-S-B2B-RC,1
+CINV-IE-2026-000001,282,UK_VAT,GB,"London, ENG, GB",country,vat,reverse_charge,25245943,0.000000,0,False,,UK-S-B2B-RC,1
+CINV-IE-2026-000001,283,UK_VAT,GB,"London, ENG, GB",country,vat,reverse_charge,1261300,0.000000,0,False,,UK-S-B2B-RC,1
+CINV-IE-2026-000001,284,UK_VAT,GB,"London, ENG, GB",country,vat,reverse_charge,1867710,0.000000,0,False,,UK-S-B2B-RC,1
+CINV-IE-2026-000001,285,UK_VAT,GB,"London, ENG, GB",country,vat,reverse_charge,12055287,0.000000,0,False,,UK-S-B2B-RC,1
+CINV-IE-2026-000001,286,UK_VAT,GB,"London, ENG, GB",country,vat,reverse_charge,16291261,0.000000,0,False,,UK-S-B2B-RC,1
+CINV-IE-2026-000001,287,UK_VAT,GB,"London, ENG, GB",country,vat,reverse_charge,362023,0.000000,0,False,,UK-S-B2B-RC,1
+CINV-IE-2026-000001,288,UK_VAT,GB,"London, ENG, GB",country,vat,reverse_charge,542010,0.000000,0,False,,UK-S-B2B-RC,1
+CINV-IE-2026-000001,289,UK_VAT,GB,"London, ENG, GB",country,vat,reverse_charge,3354521,0.000000,0,False,,UK-S-B2B-RC,1
+CINV-IE-2026-000001,290,UK_VAT,GB,"London, ENG, GB",country,vat,reverse_charge,4594503,0.000000,0,False,,UK-S-B2B-RC,1
+CINV-IE-2026-000002,291,EU_VAT,DE,"Munich, BY, DE",country,vat,reverse_charge,1425892,0.000000,0,False,,EU-S-B2B-RC,1
+CINV-IE-2026-000002,292,EU_VAT,DE,"Munich, BY, DE",country,vat,reverse_charge,2138494,0.000000,0,False,,EU-S-B2B-RC,1
+CINV-IE-2026-000002,293,EU_VAT,DE,"Munich, BY, DE",country,vat,reverse_charge,13865227,0.000000,0,False,,EU-S-B2B-RC,1
+CINV-IE-2026-000002,294,EU_VAT,DE,"Munich, BY, DE",country,vat,reverse_charge,18228853,0.000000,0,False,,EU-S-B2B-RC,1
+CINV-IE-2026-000002,295,EU_VAT,DE,"Munich, BY, DE",country,vat,reverse_charge,919107,0.000000,0,False,,EU-S-B2B-RC,1
+CINV-IE-2026-000002,296,EU_VAT,DE,"Munich, BY, DE",country,vat,reverse_charge,1386227,0.000000,0,False,,EU-S-B2B-RC,1
+CINV-IE-2026-000002,297,EU_VAT,DE,"Munich, BY, DE",country,vat,reverse_charge,8611470,0.000000,0,False,,EU-S-B2B-RC,1
+CINV-IE-2026-000002,298,EU_VAT,DE,"Munich, BY, DE",country,vat,reverse_charge,12063255,0.000000,0,False,,EU-S-B2B-RC,1
+CINV-IE-2026-000002,299,EU_VAT,DE,"Munich, BY, DE",country,vat,reverse_charge,249921,0.000000,0,False,,EU-S-B2B-RC,1
+CINV-IE-2026-000002,300,EU_VAT,DE,"Munich, BY, DE",country,vat,reverse_charge,384941,0.000000,0,False,,EU-S-B2B-RC,1
+CINV-IE-2026-000002,301,EU_VAT,DE,"Munich, BY, DE",country,vat,reverse_charge,2430375,0.000000,0,False,,EU-S-B2B-RC,1
+CINV-IE-2026-000002,302,EU_VAT,DE,"Munich, BY, DE",country,vat,reverse_charge,3448175,0.000000,0,False,,EU-S-B2B-RC,1
+CINV-IE-2026-000003,303,EU_VAT,IE,Ireland,country,vat,taxable,258032,0.230000,59347,False,,EU-S-B2B-DOMESTIC,1
+CINV-IE-2026-000003,304,EU_VAT,IE,Ireland,country,vat,taxable,391847,0.230000,90125,False,,EU-S-B2B-DOMESTIC,1
+CINV-IE-2026-000003,305,EU_VAT,IE,Ireland,country,vat,taxable,2484233,0.230000,571374,False,,EU-S-B2B-DOMESTIC,1
+CINV-IE-2026-000003,306,EU_VAT,IE,Ireland,country,vat,taxable,3441594,0.230000,791567,False,,EU-S-B2B-DOMESTIC,1
+CINV-IE-2026-000003,307,EU_VAT,IE,Ireland,country,vat,taxable,162904,0.230000,37468,False,,EU-S-B2B-DOMESTIC,1
+CINV-IE-2026-000003,308,EU_VAT,IE,Ireland,country,vat,taxable,249984,0.230000,57496,False,,EU-S-B2B-DOMESTIC,1
+CINV-IE-2026-000003,309,EU_VAT,IE,Ireland,country,vat,taxable,1610155,0.230000,370336,False,,EU-S-B2B-DOMESTIC,1
+CINV-IE-2026-000003,310,EU_VAT,IE,Ireland,country,vat,taxable,2108588,0.230000,484975,False,,EU-S-B2B-DOMESTIC,1
+CINV-IE-2026-000003,311,EU_VAT,IE,Ireland,country,vat,taxable,49195,0.230000,11315,False,,EU-S-B2B-DOMESTIC,1
+CINV-IE-2026-000003,312,EU_VAT,IE,Ireland,country,vat,taxable,72154,0.230000,16595,False,,EU-S-B2B-DOMESTIC,1
+CINV-IE-2026-000003,313,EU_VAT,IE,Ireland,country,vat,taxable,465054,0.230000,106962,False,,EU-S-B2B-DOMESTIC,1
+CINV-IE-2026-000003,314,EU_VAT,IE,Ireland,country,vat,taxable,620127,0.230000,142629,False,,EU-S-B2B-DOMESTIC,1
+CINV-IE-2026-000004,315,CH_VAT,CH,"Zurich, ZH, CH",country,vat,reverse_charge,672305,0.000000,0,False,,CH-S-B2B-RC,4
+CINV-IE-2026-000004,316,CH_VAT,CH,"Zurich, ZH, CH",country,vat,reverse_charge,995997,0.000000,0,False,,CH-S-B2B-RC,4
+CINV-IE-2026-000004,317,CH_VAT,CH,"Zurich, ZH, CH",country,vat,reverse_charge,6289696,0.000000,0,False,,CH-S-B2B-RC,4
+CINV-IE-2026-000004,318,CH_VAT,CH,"Zurich, ZH, CH",country,vat,reverse_charge,8740386,0.000000,0,False,,CH-S-B2B-RC,4
+CINV-IE-2026-000004,319,CH_VAT,CH,"Zurich, ZH, CH",country,vat,reverse_charge,423066,0.000000,0,False,,CH-S-B2B-RC,4
+CINV-IE-2026-000004,320,CH_VAT,CH,"Zurich, ZH, CH",country,vat,reverse_charge,611319,0.000000,0,False,,CH-S-B2B-RC,4
+CINV-IE-2026-000004,321,CH_VAT,CH,"Zurich, ZH, CH",country,vat,reverse_charge,3911437,0.000000,0,False,,CH-S-B2B-RC,4
+CINV-IE-2026-000004,322,CH_VAT,CH,"Zurich, ZH, CH",country,vat,reverse_charge,5309462,0.000000,0,False,,CH-S-B2B-RC,4
+CINV-IE-2026-000004,323,CH_VAT,CH,"Zurich, ZH, CH",country,vat,reverse_charge,116202,0.000000,0,False,,CH-S-B2B-RC,4
+CINV-IE-2026-000004,324,CH_VAT,CH,"Zurich, ZH, CH",country,vat,reverse_charge,182864,0.000000,0,False,,CH-S-B2B-RC,4
+CINV-IE-2026-000004,325,CH_VAT,CH,"Zurich, ZH, CH",country,vat,reverse_charge,1119494,0.000000,0,False,,CH-S-B2B-RC,4
+CINV-IE-2026-000004,326,CH_VAT,CH,"Zurich, ZH, CH",country,vat,reverse_charge,1549026,0.000000,0,False,,CH-S-B2B-RC,4
+CINV-IE-2026-000005,327,EU_VAT,NL,Netherlands,country,vat,taxable,175229,0.210000,36798,False,,EU-S-B2B-UNVALIDATED,2
+CINV-IE-2026-000005,328,EU_VAT,NL,Netherlands,country,vat,taxable,265470,0.210000,55749,False,,EU-S-B2B-UNVALIDATED,2
+CINV-IE-2026-000005,329,EU_VAT,NL,Netherlands,country,vat,taxable,1636015,0.210000,343563,False,,EU-S-B2B-UNVALIDATED,2
+CINV-IE-2026-000005,330,EU_VAT,NL,Netherlands,country,vat,taxable,2338101,0.210000,491001,False,,EU-S-B2B-UNVALIDATED,2
+CINV-IE-2026-000005,331,EU_VAT,NL,Netherlands,country,vat,taxable,112196,0.210000,23561,False,,EU-S-B2B-UNVALIDATED,2
+CINV-IE-2026-000005,332,EU_VAT,NL,Netherlands,country,vat,taxable,166729,0.210000,35013,False,,EU-S-B2B-UNVALIDATED,2
+CINV-IE-2026-000005,333,EU_VAT,NL,Netherlands,country,vat,taxable,1062235,0.210000,223069,False,,EU-S-B2B-UNVALIDATED,2
+CINV-IE-2026-000005,334,EU_VAT,NL,Netherlands,country,vat,taxable,1449397,0.210000,304373,False,,EU-S-B2B-UNVALIDATED,2
+CINV-IE-2026-000005,335,EU_VAT,NL,Netherlands,country,vat,taxable,32870,0.210000,6903,False,,EU-S-B2B-UNVALIDATED,2
+CINV-IE-2026-000005,336,EU_VAT,NL,Netherlands,country,vat,taxable,48672,0.210000,10221,False,,EU-S-B2B-UNVALIDATED,2
+CINV-IE-2026-000005,337,EU_VAT,NL,Netherlands,country,vat,taxable,296495,0.210000,62264,False,,EU-S-B2B-UNVALIDATED,2
+CINV-IE-2026-000005,338,EU_VAT,NL,Netherlands,country,vat,taxable,429231,0.210000,90139,False,,EU-S-B2B-UNVALIDATED,2
+CINV-JP-2026-000001,339,JP_JCT,JP,Japan,combined,jct,taxable,4042966,0.100000,404297,False,,JP-S-DOMESTIC-B2B,2
+CINV-JP-2026-000001,340,JP_JCT,JP,Japan,combined,jct,taxable,5952644,0.100000,595264,False,,JP-S-DOMESTIC-B2B,2
+CINV-JP-2026-000001,341,JP_JCT,JP,Japan,combined,jct,taxable,37568718,0.100000,3756872,False,,JP-S-DOMESTIC-B2B,2
+CINV-JP-2026-000001,342,JP_JCT,JP,Japan,combined,jct,taxable,51204140,0.100000,5120414,False,,JP-S-DOMESTIC-B2B,2
+CINV-JP-2026-000001,343,JP_JCT,JP,Japan,combined,jct,taxable,2511585,0.100000,251158,False,,JP-S-DOMESTIC-B2B,2
+CINV-JP-2026-000001,344,JP_JCT,JP,Japan,combined,jct,taxable,3792131,0.100000,379213,False,,JP-S-DOMESTIC-B2B,2
+CINV-JP-2026-000001,345,JP_JCT,JP,Japan,combined,jct,taxable,23644537,0.100000,2364454,False,,JP-S-DOMESTIC-B2B,2
+CINV-JP-2026-000001,346,JP_JCT,JP,Japan,combined,jct,taxable,32533998,0.100000,3253400,False,,JP-S-DOMESTIC-B2B,2
+CINV-JP-2026-000001,347,JP_JCT,JP,Japan,combined,jct,taxable,711931,0.100000,71193,False,,JP-S-DOMESTIC-B2B,2
+CINV-JP-2026-000001,348,JP_JCT,JP,Japan,combined,jct,taxable,1071011,0.100000,107101,False,,JP-S-DOMESTIC-B2B,2
+CINV-JP-2026-000001,349,JP_JCT,JP,Japan,combined,jct,taxable,6885184,0.100000,688518,False,,JP-S-DOMESTIC-B2B,2
+CINV-JP-2026-000001,350,JP_JCT,JP,Japan,combined,jct,taxable,9483719,0.100000,948372,False,,JP-S-DOMESTIC-B2B,2
+CINV-SG-2026-000001,351,SG_GST,SG,Singapore,country,gst,taxable,969502,0.090000,87255,False,,SG-S-DOMESTIC,3
+CINV-SG-2026-000001,352,SG_GST,SG,Singapore,country,gst,taxable,1438204,0.090000,129438,False,,SG-S-DOMESTIC,3
+CINV-SG-2026-000001,353,SG_GST,SG,Singapore,country,gst,taxable,9339815,0.090000,840584,False,,SG-S-DOMESTIC,3
+CINV-SG-2026-000001,354,SG_GST,SG,Singapore,country,gst,taxable,12991492,0.090000,1169234,False,,SG-S-DOMESTIC,3
+CINV-SG-2026-000001,355,SG_GST,SG,Singapore,country,gst,taxable,624072,0.090000,56167,False,,SG-S-DOMESTIC,3
+CINV-SG-2026-000001,356,SG_GST,SG,Singapore,country,gst,taxable,943848,0.090000,84946,False,,SG-S-DOMESTIC,3
+CINV-SG-2026-000001,357,SG_GST,SG,Singapore,country,gst,taxable,5986212,0.090000,538759,False,,SG-S-DOMESTIC,3
+CINV-SG-2026-000001,358,SG_GST,SG,Singapore,country,gst,taxable,8271845,0.090000,744466,False,,SG-S-DOMESTIC,3
+CINV-SG-2026-000001,359,SG_GST,SG,Singapore,country,gst,taxable,180268,0.090000,16224,False,,SG-S-DOMESTIC,3
+CINV-SG-2026-000001,360,SG_GST,SG,Singapore,country,gst,taxable,278320,0.090000,25049,False,,SG-S-DOMESTIC,3
+CINV-SG-2026-000001,361,SG_GST,SG,Singapore,country,gst,taxable,1687833,0.090000,151905,False,,SG-S-DOMESTIC,3
+CINV-SG-2026-000001,362,SG_GST,SG,Singapore,country,gst,taxable,2339632,0.090000,210567,False,,SG-S-DOMESTIC,3
+SINV-US-2026-000007,388,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,0,US-P-DOMESTIC,4
+SINV-US-2026-000007,389,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,0,US-P-DOMESTIC,4
+SINV-US-2026-000008,390,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales_use,use_tax_accrual,3840000,0.082500,316800,True,0,US-P-DOMESTIC,4
+SINV-US-2026-000009,391,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,0,US-P-DOMESTIC,4
+SINV-US-2026-000010,392,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,0,US-P-DOMESTIC,4
+SINV-US-2026-000011,393,US_SUT,US,"San Francisco, CA, US",country,sales,out_of_scope,21000000,0.000000,0,False,,US-P-IMPORT-SERVICES,3
+SINV-IE-2026-000004,394,EU_VAT,IE,Ireland,country,vat,reverse_charge,1800000,0.230000,414000,True,,IE-P-RC-NONEU-SERVICES,3
+SINV-IE-2026-000005,395,EU_VAT,IE,Ireland,country,vat,vendor_charged,8500000,0.230000,1955000,False,1955000,IE-P-DOMESTIC,4
+SINV-JP-2026-000003,396,JP_JCT,JP,Japan,combined,jct,vendor_charged,3200000,0.100000,320000,False,320000,JP-P-QUALIFIED,2
+SINV-JP-2026-000004,397,JP_JCT,JP,Japan,combined,jct,vendor_charged,200000,0.100000,20000,False,20000,JP-P-NON-QUALIFIED,2
+SINV-SG-2026-000002,398,SG_GST,SG,Singapore,country,gst,vendor_charged,24000000,0.090000,2160000,False,2160000,SG-P-DOMESTIC,4
+CINV-US-2026-000016,460,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,1086485,0.088750,96425,False,,US-S-REGISTERED,5
+CINV-US-2026-000016,461,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,1657806,0.088750,147130,False,,US-S-REGISTERED,5
+CINV-US-2026-000016,462,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,10522418,0.088750,933865,False,,US-S-REGISTERED,5
+CINV-US-2026-000016,463,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,14135019,0.088750,1254483,False,,US-S-REGISTERED,5
+CINV-US-2026-000016,464,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,715005,0.088750,63457,False,,US-S-REGISTERED,5
+CINV-US-2026-000016,465,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,1066449,0.088750,94647,False,,US-S-REGISTERED,5
+CINV-US-2026-000016,466,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,6756424,0.088750,599633,False,,US-S-REGISTERED,5
+CINV-US-2026-000016,467,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,9058260,0.088750,803921,False,,US-S-REGISTERED,5
+CINV-US-2026-000016,468,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,199267,0.088750,17685,False,,US-S-REGISTERED,5
+CINV-US-2026-000016,469,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,288455,0.088750,25600,False,,US-S-REGISTERED,5
+CINV-US-2026-000016,470,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,1906547,0.088750,169206,False,,US-S-REGISTERED,5
+CINV-US-2026-000016,471,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,2615854,0.088750,232157,False,,US-S-REGISTERED,5
+CINV-US-2026-000017,474,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,508733,0.103500,52654,False,,US-S-REGISTERED,5
+CINV-US-2026-000017,475,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,744951,0.103500,77102,False,,US-S-REGISTERED,5
+CINV-US-2026-000017,476,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,4792596,0.103500,496034,False,,US-S-REGISTERED,5
+CINV-US-2026-000017,477,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,6364056,0.103500,658680,False,,US-S-REGISTERED,5
+CINV-US-2026-000017,478,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,333736,0.103500,34542,False,,US-S-REGISTERED,5
+CINV-US-2026-000017,479,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,482013,0.103500,49888,False,,US-S-REGISTERED,5
+CINV-US-2026-000017,480,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,3034455,0.103500,314066,False,,US-S-REGISTERED,5
+CINV-US-2026-000017,481,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,4088712,0.103500,423182,False,,US-S-REGISTERED,5
+CINV-US-2026-000017,482,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,90990,0.103500,9417,False,,US-S-REGISTERED,5
+CINV-US-2026-000017,483,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,136687,0.103500,14147,False,,US-S-REGISTERED,5
+CINV-US-2026-000017,484,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,846855,0.103500,87650,False,,US-S-REGISTERED,5
+CINV-US-2026-000017,485,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,1199346,0.103500,124132,False,,US-S-REGISTERED,5
+CINV-US-2026-000018,486,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,exempt,108722,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000018,487,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,exempt,170054,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000018,488,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,exempt,1028521,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000018,489,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,exempt,1422018,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000018,490,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,exempt,71454,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000018,491,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,exempt,104483,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000018,492,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,exempt,674363,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000018,493,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,exempt,896749,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000018,494,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,exempt,20033,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000018,495,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,exempt,29294,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000018,496,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,exempt,190306,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000018,497,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,exempt,262698,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000019,498,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,497814,0.082500,41070,False,,US-S-REGISTERED,5
+CINV-US-2026-000019,499,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,1543381,0.082500,127329,False,,US-S-REGISTERED,5
+CINV-US-2026-000019,500,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,768521,0.082500,63403,False,,US-S-REGISTERED,5
+CINV-US-2026-000019,501,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,2251307,0.082500,185733,False,,US-S-REGISTERED,5
+CINV-US-2026-000019,502,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,4684514,0.082500,386472,False,,US-S-REGISTERED,5
+CINV-US-2026-000019,503,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,14089342,0.082500,1162371,False,,US-S-REGISTERED,5
+CINV-US-2026-000019,504,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,6581480,0.082500,542972,False,,US-S-REGISTERED,5
+CINV-US-2026-000019,505,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,19937243,0.082500,1644823,False,,US-S-REGISTERED,5
+CINV-US-2026-000019,506,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,327174,0.082500,26992,False,,US-S-REGISTERED,5
+CINV-US-2026-000019,507,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,979451,0.082500,80805,False,,US-S-REGISTERED,5
+CINV-US-2026-000019,508,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,480349,0.082500,39629,False,,US-S-REGISTERED,5
+CINV-US-2026-000019,509,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,1461706,0.082500,120591,False,,US-S-REGISTERED,5
+CINV-US-2026-000019,510,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,2995874,0.082500,247160,False,,US-S-REGISTERED,5
+CINV-US-2026-000019,511,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,9045228,0.082500,746231,False,,US-S-REGISTERED,5
+CINV-US-2026-000019,512,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,4113022,0.082500,339324,False,,US-S-REGISTERED,5
+CINV-US-2026-000019,513,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,12492571,0.082500,1030637,False,,US-S-REGISTERED,5
+CINV-US-2026-000019,514,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,93514,0.082500,7715,False,,US-S-REGISTERED,5
+CINV-US-2026-000019,515,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,280547,0.082500,23145,False,,US-S-REGISTERED,5
+CINV-US-2026-000019,516,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,134066,0.082500,11060,False,,US-S-REGISTERED,5
+CINV-US-2026-000019,517,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,416586,0.082500,34368,False,,US-S-REGISTERED,5
+CINV-US-2026-000019,518,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,861777,0.082500,71097,False,,US-S-REGISTERED,5
+CINV-US-2026-000019,519,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,2641374,0.082500,217913,False,,US-S-REGISTERED,5
+CINV-US-2026-000019,520,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,1223646,0.082500,100951,False,,US-S-REGISTERED,5
+CINV-US-2026-000019,521,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,3538948,0.082500,291963,False,,US-S-REGISTERED,5
+CINV-US-2026-000019,522,US_SUT,US-TX-HOUSTON,"Houston, Texas",combined,sales,taxable,9600000,0.082500,792000,False,,US-S-REGISTERED,5
+CINV-US-2026-000020,523,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000020,524,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000020,525,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000020,526,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000020,527,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000020,528,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000020,529,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000020,530,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000020,531,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000020,532,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000020,533,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000020,534,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000020,535,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000020,536,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000020,537,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000020,538,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000020,539,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000020,540,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000020,541,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000020,542,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000020,543,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000020,544,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000020,545,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000020,546,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000021,547,US_SUT,US,"Chicago, IL, US",country,sales,not_registered,350932,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000021,548,US_SUT,US,"Chicago, IL, US",country,sales,not_registered,515855,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000021,549,US_SUT,US,"Chicago, IL, US",country,sales,not_registered,3271836,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000021,550,US_SUT,US,"Chicago, IL, US",country,sales,not_registered,4461774,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000021,551,US_SUT,US,"Chicago, IL, US",country,sales,not_registered,221849,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000021,552,US_SUT,US,"Chicago, IL, US",country,sales,not_registered,317200,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000021,553,US_SUT,US,"Chicago, IL, US",country,sales,not_registered,2035157,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000021,554,US_SUT,US,"Chicago, IL, US",country,sales,not_registered,2859171,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000021,555,US_SUT,US,"Chicago, IL, US",country,sales,not_registered,64066,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000021,556,US_SUT,US,"Chicago, IL, US",country,sales,not_registered,94832,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000021,557,US_SUT,US,"Chicago, IL, US",country,sales,not_registered,579639,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000021,558,US_SUT,US,"Chicago, IL, US",country,sales,not_registered,821928,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000022,559,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,975117,0.088750,86542,False,,US-S-REGISTERED,5
+CINV-US-2026-000022,560,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,1508762,0.088750,133903,False,,US-S-REGISTERED,5
+CINV-US-2026-000022,561,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,9501452,0.088750,843254,False,,US-S-REGISTERED,5
+CINV-US-2026-000022,562,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,12379432,0.088750,1098674,False,,US-S-REGISTERED,5
+CINV-US-2026-000022,563,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,610475,0.088750,54180,False,,US-S-REGISTERED,5
+CINV-US-2026-000022,564,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,925174,0.088750,82109,False,,US-S-REGISTERED,5
+CINV-US-2026-000022,565,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,5900864,0.088750,523702,False,,US-S-REGISTERED,5
+CINV-US-2026-000022,566,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,7913741,0.088750,702344,False,,US-S-REGISTERED,5
+CINV-US-2026-000022,567,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,175195,0.088750,15548,False,,US-S-REGISTERED,5
+CINV-US-2026-000022,568,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,264349,0.088750,23461,False,,US-S-REGISTERED,5
+CINV-US-2026-000022,569,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,1598367,0.088750,141855,False,,US-S-REGISTERED,5
+CINV-US-2026-000022,570,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,2271592,0.088750,201604,False,,US-S-REGISTERED,5
+CINV-US-2026-000023,571,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,893409,0.088750,79290,False,,US-S-REGISTERED,5
+CINV-US-2026-000023,572,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,1316835,0.088750,116869,False,,US-S-REGISTERED,5
+CINV-US-2026-000023,573,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,8368683,0.088750,742721,False,,US-S-REGISTERED,5
+CINV-US-2026-000023,574,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,11296826,0.088750,1002593,False,,US-S-REGISTERED,5
+CINV-US-2026-000023,575,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,556721,0.088750,49409,False,,US-S-REGISTERED,5
+CINV-US-2026-000023,576,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,826355,0.088750,73339,False,,US-S-REGISTERED,5
+CINV-US-2026-000023,577,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,5290035,0.088750,469491,False,,US-S-REGISTERED,5
+CINV-US-2026-000023,578,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,7159846,0.088750,635436,False,,US-S-REGISTERED,5
+CINV-US-2026-000023,579,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,160098,0.088750,14209,False,,US-S-REGISTERED,5
+CINV-US-2026-000023,580,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,240468,0.088750,21342,False,,US-S-REGISTERED,5
+CINV-US-2026-000023,581,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,1506153,0.088750,133671,False,,US-S-REGISTERED,5
+CINV-US-2026-000023,582,US_SUT,US-NY-NYC,"New York City, New York",combined,sales,taxable,1925200,0.088750,170861,False,,US-S-REGISTERED,5
+CINV-US-2026-000024,583,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,708858,0.103500,73367,False,,US-S-REGISTERED,5
+CINV-US-2026-000024,584,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,1063016,0.103500,110022,False,,US-S-REGISTERED,5
+CINV-US-2026-000024,585,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,6986938,0.103500,723148,False,,US-S-REGISTERED,5
+CINV-US-2026-000024,586,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,9499692,0.103500,983218,False,,US-S-REGISTERED,5
+CINV-US-2026-000024,587,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,446457,0.103500,46209,False,,US-S-REGISTERED,5
+CINV-US-2026-000024,588,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,674051,0.103500,69764,False,,US-S-REGISTERED,5
+CINV-US-2026-000024,589,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,4319664,0.103500,447085,False,,US-S-REGISTERED,5
+CINV-US-2026-000024,590,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,5874456,0.103500,608006,False,,US-S-REGISTERED,5
+CINV-US-2026-000024,591,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,130743,0.103500,13532,False,,US-S-REGISTERED,5
+CINV-US-2026-000024,592,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,194524,0.103500,20133,False,,US-S-REGISTERED,5
+CINV-US-2026-000024,593,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,1208347,0.103500,125064,False,,US-S-REGISTERED,5
+CINV-US-2026-000024,594,US_SUT,US-WA-SEATTLE,"Seattle, Washington",combined,sales,taxable,1711265,0.103500,177116,False,,US-S-REGISTERED,5
+CINV-US-2026-000025,595,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,taxable,343697,0.082500,28355,False,,US-S-REGISTERED,5
+CINV-US-2026-000025,596,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,taxable,534576,0.082500,44103,False,,US-S-REGISTERED,5
+CINV-US-2026-000025,597,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,taxable,3288194,0.082500,271276,False,,US-S-REGISTERED,5
+CINV-US-2026-000025,598,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,taxable,4509098,0.082500,372001,False,,US-S-REGISTERED,5
+CINV-US-2026-000025,599,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,taxable,218958,0.082500,18064,False,,US-S-REGISTERED,5
+CINV-US-2026-000025,600,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,taxable,327454,0.082500,27015,False,,US-S-REGISTERED,5
+CINV-US-2026-000025,601,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,taxable,1990773,0.082500,164239,False,,US-S-REGISTERED,5
+CINV-US-2026-000025,602,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,taxable,2858865,0.082500,235856,False,,US-S-REGISTERED,5
+CINV-US-2026-000025,603,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,taxable,64733,0.082500,5340,False,,US-S-REGISTERED,5
+CINV-US-2026-000025,604,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,taxable,97440,0.082500,8039,False,,US-S-REGISTERED,5
+CINV-US-2026-000025,605,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,taxable,618562,0.082500,51031,False,,US-S-REGISTERED,5
+CINV-US-2026-000025,606,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales,taxable,806434,0.082500,66531,False,,US-S-REGISTERED,5
+CINV-US-2026-000026,607,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000026,608,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000026,609,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000026,610,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000026,611,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000026,612,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000026,613,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000026,614,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000026,615,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000026,616,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000026,617,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000026,618,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000026,619,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000026,620,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000026,621,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000026,622,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000026,623,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000026,624,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000026,625,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000026,626,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000026,627,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000026,628,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000026,629,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000026,630,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,,US-S-REGISTERED,5
+CINV-US-2026-000027,631,US_SUT,US,"Boston, MA, US",country,sales,not_registered,583039,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000027,632,US_SUT,US,"Boston, MA, US",country,sales,not_registered,900375,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000027,633,US_SUT,US,"Boston, MA, US",country,sales,not_registered,5547757,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000027,634,US_SUT,US,"Boston, MA, US",country,sales,not_registered,7713866,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000027,635,US_SUT,US,"Boston, MA, US",country,sales,not_registered,375403,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000027,636,US_SUT,US,"Boston, MA, US",country,sales,not_registered,550461,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000027,637,US_SUT,US,"Boston, MA, US",country,sales,not_registered,3508584,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000027,638,US_SUT,US,"Boston, MA, US",country,sales,not_registered,4938048,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000027,639,US_SUT,US,"Boston, MA, US",country,sales,not_registered,107393,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000027,640,US_SUT,US,"Boston, MA, US",country,sales,not_registered,165650,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000027,641,US_SUT,US,"Boston, MA, US",country,sales,not_registered,1026808,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000027,642,US_SUT,US,"Boston, MA, US",country,sales,not_registered,1405778,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000028,643,US_SUT,US,"Denver, CO, US",country,sales,not_registered,215642,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000028,644,US_SUT,US,"Denver, CO, US",country,sales,not_registered,323363,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000028,645,US_SUT,US,"Denver, CO, US",country,sales,not_registered,2052981,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000028,646,US_SUT,US,"Denver, CO, US",country,sales,not_registered,2887940,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000028,647,US_SUT,US,"Denver, CO, US",country,sales,not_registered,136300,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000028,648,US_SUT,US,"Denver, CO, US",country,sales,not_registered,208929,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000028,649,US_SUT,US,"Denver, CO, US",country,sales,not_registered,1310968,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000028,650,US_SUT,US,"Denver, CO, US",country,sales,not_registered,1791082,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000028,651,US_SUT,US,"Denver, CO, US",country,sales,not_registered,39548,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000028,652,US_SUT,US,"Denver, CO, US",country,sales,not_registered,58788,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000028,653,US_SUT,US,"Denver, CO, US",country,sales,not_registered,376242,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000028,654,US_SUT,US,"Denver, CO, US",country,sales,not_registered,512964,0.000000,0,False,,US-S-NOT-REGISTERED,5
+CINV-US-2026-000029,655,IN_GST,IN,"Bengaluru, KA, IN",country,gst,reverse_charge,402592,0.000000,0,False,,IN-S-B2B-RCM,4
+CINV-US-2026-000029,656,IN_GST,IN,"Bengaluru, KA, IN",country,gst,reverse_charge,630574,0.000000,0,False,,IN-S-B2B-RCM,4
+CINV-US-2026-000029,657,IN_GST,IN,"Bengaluru, KA, IN",country,gst,reverse_charge,3965845,0.000000,0,False,,IN-S-B2B-RCM,4
+CINV-US-2026-000029,658,IN_GST,IN,"Bengaluru, KA, IN",country,gst,reverse_charge,5509493,0.000000,0,False,,IN-S-B2B-RCM,4
+CINV-US-2026-000029,659,IN_GST,IN,"Bengaluru, KA, IN",country,gst,reverse_charge,256910,0.000000,0,False,,IN-S-B2B-RCM,4
+CINV-US-2026-000029,660,IN_GST,IN,"Bengaluru, KA, IN",country,gst,reverse_charge,393171,0.000000,0,False,,IN-S-B2B-RCM,4
+CINV-US-2026-000029,661,IN_GST,IN,"Bengaluru, KA, IN",country,gst,reverse_charge,2498247,0.000000,0,False,,IN-S-B2B-RCM,4
+CINV-US-2026-000029,662,IN_GST,IN,"Bengaluru, KA, IN",country,gst,reverse_charge,3453276,0.000000,0,False,,IN-S-B2B-RCM,4
+CINV-US-2026-000029,663,IN_GST,IN,"Bengaluru, KA, IN",country,gst,reverse_charge,77140,0.000000,0,False,,IN-S-B2B-RCM,4
+CINV-US-2026-000029,664,IN_GST,IN,"Bengaluru, KA, IN",country,gst,reverse_charge,113433,0.000000,0,False,,IN-S-B2B-RCM,4
+CINV-US-2026-000029,665,IN_GST,IN,"Bengaluru, KA, IN",country,gst,reverse_charge,703769,0.000000,0,False,,IN-S-B2B-RCM,4
+CINV-US-2026-000029,666,IN_GST,IN,"Bengaluru, KA, IN",country,gst,reverse_charge,967344,0.000000,0,False,,IN-S-B2B-RCM,4
+CINV-US-2026-000030,667,AU_GST,AU,"Sydney, NSW, AU",country,gst,out_of_scope,204874,0.000000,0,False,,AU-S-B2B,2
+CINV-US-2026-000030,668,AU_GST,AU,"Sydney, NSW, AU",country,gst,out_of_scope,304206,0.000000,0,False,,AU-S-B2B,2
+CINV-US-2026-000030,669,AU_GST,AU,"Sydney, NSW, AU",country,gst,out_of_scope,1920493,0.000000,0,False,,AU-S-B2B,2
+CINV-US-2026-000030,670,AU_GST,AU,"Sydney, NSW, AU",country,gst,out_of_scope,2635960,0.000000,0,False,,AU-S-B2B,2
+CINV-US-2026-000030,671,AU_GST,AU,"Sydney, NSW, AU",country,gst,out_of_scope,129222,0.000000,0,False,,AU-S-B2B,2
+CINV-US-2026-000030,672,AU_GST,AU,"Sydney, NSW, AU",country,gst,out_of_scope,194797,0.000000,0,False,,AU-S-B2B,2
+CINV-US-2026-000030,673,AU_GST,AU,"Sydney, NSW, AU",country,gst,out_of_scope,1238416,0.000000,0,False,,AU-S-B2B,2
+CINV-US-2026-000030,674,AU_GST,AU,"Sydney, NSW, AU",country,gst,out_of_scope,1724552,0.000000,0,False,,AU-S-B2B,2
+CINV-US-2026-000030,675,AU_GST,AU,"Sydney, NSW, AU",country,gst,out_of_scope,36802,0.000000,0,False,,AU-S-B2B,2
+CINV-US-2026-000030,676,AU_GST,AU,"Sydney, NSW, AU",country,gst,out_of_scope,55284,0.000000,0,False,,AU-S-B2B,2
+CINV-US-2026-000030,677,AU_GST,AU,"Sydney, NSW, AU",country,gst,out_of_scope,360390,0.000000,0,False,,AU-S-B2B,2
+CINV-US-2026-000030,678,AU_GST,AU,"Sydney, NSW, AU",country,gst,out_of_scope,481044,0.000000,0,False,,AU-S-B2B,2
+CINV-IE-2026-000006,679,UK_VAT,GB,"London, ENG, GB",country,vat,reverse_charge,2017161,0.000000,0,False,,UK-S-B2B-RC,1
+CINV-IE-2026-000006,680,UK_VAT,GB,"London, ENG, GB",country,vat,reverse_charge,3158517,0.000000,0,False,,UK-S-B2B-RC,1
+CINV-IE-2026-000006,681,UK_VAT,GB,"London, ENG, GB",country,vat,reverse_charge,19728580,0.000000,0,False,,UK-S-B2B-RC,1
+CINV-IE-2026-000006,682,UK_VAT,GB,"London, ENG, GB",country,vat,reverse_charge,27027916,0.000000,0,False,,UK-S-B2B-RC,1
+CINV-IE-2026-000006,683,UK_VAT,GB,"London, ENG, GB",country,vat,reverse_charge,1312558,0.000000,0,False,,UK-S-B2B-RC,1
+CINV-IE-2026-000006,684,UK_VAT,GB,"London, ENG, GB",country,vat,reverse_charge,1958584,0.000000,0,False,,UK-S-B2B-RC,1
+CINV-IE-2026-000006,685,UK_VAT,GB,"London, ENG, GB",country,vat,reverse_charge,12769981,0.000000,0,False,,UK-S-B2B-RC,1
+CINV-IE-2026-000006,686,UK_VAT,GB,"London, ENG, GB",country,vat,reverse_charge,17449836,0.000000,0,False,,UK-S-B2B-RC,1
+CINV-IE-2026-000006,687,UK_VAT,GB,"London, ENG, GB",country,vat,reverse_charge,373649,0.000000,0,False,,UK-S-B2B-RC,1
+CINV-IE-2026-000006,688,UK_VAT,GB,"London, ENG, GB",country,vat,reverse_charge,577671,0.000000,0,False,,UK-S-B2B-RC,1
+CINV-IE-2026-000006,689,UK_VAT,GB,"London, ENG, GB",country,vat,reverse_charge,3536062,0.000000,0,False,,UK-S-B2B-RC,1
+CINV-IE-2026-000006,690,UK_VAT,GB,"London, ENG, GB",country,vat,reverse_charge,4992245,0.000000,0,False,,UK-S-B2B-RC,1
+CINV-IE-2026-000008,703,EU_VAT,IE,Ireland,country,vat,taxable,269620,0.230000,62013,False,,EU-S-B2B-DOMESTIC,1
+CINV-IE-2026-000008,704,EU_VAT,IE,Ireland,country,vat,taxable,406504,0.230000,93496,False,,EU-S-B2B-DOMESTIC,1
+CINV-IE-2026-000008,705,EU_VAT,IE,Ireland,country,vat,taxable,2621227,0.230000,602882,False,,EU-S-B2B-DOMESTIC,1
+CINV-IE-2026-000008,706,EU_VAT,IE,Ireland,country,vat,taxable,3582593,0.230000,823996,False,,EU-S-B2B-DOMESTIC,1
+CINV-IE-2026-000008,707,EU_VAT,IE,Ireland,country,vat,taxable,176356,0.230000,40562,False,,EU-S-B2B-DOMESTIC,1
+CINV-IE-2026-000008,708,EU_VAT,IE,Ireland,country,vat,taxable,253994,0.230000,58419,False,,EU-S-B2B-DOMESTIC,1
+CINV-IE-2026-000008,709,EU_VAT,IE,Ireland,country,vat,taxable,1633870,0.230000,375790,False,,EU-S-B2B-DOMESTIC,1
+CINV-IE-2026-000008,710,EU_VAT,IE,Ireland,country,vat,taxable,2227285,0.230000,512276,False,,EU-S-B2B-DOMESTIC,1
+CINV-IE-2026-000008,711,EU_VAT,IE,Ireland,country,vat,taxable,47506,0.230000,10926,False,,EU-S-B2B-DOMESTIC,1
+CINV-IE-2026-000008,712,EU_VAT,IE,Ireland,country,vat,taxable,76039,0.230000,17489,False,,EU-S-B2B-DOMESTIC,1
+CINV-IE-2026-000008,713,EU_VAT,IE,Ireland,country,vat,taxable,478581,0.230000,110074,False,,EU-S-B2B-DOMESTIC,1
+CINV-IE-2026-000008,714,EU_VAT,IE,Ireland,country,vat,taxable,638567,0.230000,146870,False,,EU-S-B2B-DOMESTIC,1
+CINV-IE-2026-000009,715,CH_VAT,CH,"Zurich, ZH, CH",country,vat,reverse_charge,692424,0.000000,0,False,,CH-S-B2B-RC,4
+CINV-IE-2026-000009,716,CH_VAT,CH,"Zurich, ZH, CH",country,vat,reverse_charge,1028002,0.000000,0,False,,CH-S-B2B-RC,4
+CINV-IE-2026-000009,717,CH_VAT,CH,"Zurich, ZH, CH",country,vat,reverse_charge,6522397,0.000000,0,False,,CH-S-B2B-RC,4
+CINV-IE-2026-000009,718,CH_VAT,CH,"Zurich, ZH, CH",country,vat,reverse_charge,9092773,0.000000,0,False,,CH-S-B2B-RC,4
+CINV-IE-2026-000009,719,CH_VAT,CH,"Zurich, ZH, CH",country,vat,reverse_charge,433258,0.000000,0,False,,CH-S-B2B-RC,4
+CINV-IE-2026-000009,720,CH_VAT,CH,"Zurich, ZH, CH",country,vat,reverse_charge,654441,0.000000,0,False,,CH-S-B2B-RC,4
+CINV-IE-2026-000009,721,CH_VAT,CH,"Zurich, ZH, CH",country,vat,reverse_charge,4097936,0.000000,0,False,,CH-S-B2B-RC,4
+CINV-IE-2026-000009,722,CH_VAT,CH,"Zurich, ZH, CH",country,vat,reverse_charge,5716859,0.000000,0,False,,CH-S-B2B-RC,4
+CINV-IE-2026-000009,723,CH_VAT,CH,"Zurich, ZH, CH",country,vat,reverse_charge,123644,0.000000,0,False,,CH-S-B2B-RC,4
+CINV-IE-2026-000009,724,CH_VAT,CH,"Zurich, ZH, CH",country,vat,reverse_charge,189530,0.000000,0,False,,CH-S-B2B-RC,4
+CINV-IE-2026-000009,725,CH_VAT,CH,"Zurich, ZH, CH",country,vat,reverse_charge,1213130,0.000000,0,False,,CH-S-B2B-RC,4
+CINV-IE-2026-000009,726,CH_VAT,CH,"Zurich, ZH, CH",country,vat,reverse_charge,1641170,0.000000,0,False,,CH-S-B2B-RC,4
+CINV-JP-2026-000002,739,JP_JCT,JP,Japan,combined,jct,taxable,4074061,0.100000,407406,False,,JP-S-DOMESTIC-B2B,2
+CINV-JP-2026-000002,740,JP_JCT,JP,Japan,combined,jct,taxable,6262525,0.100000,626252,False,,JP-S-DOMESTIC-B2B,2
+CINV-JP-2026-000002,741,JP_JCT,JP,Japan,combined,jct,taxable,39423529,0.100000,3942353,False,,JP-S-DOMESTIC-B2B,2
+CINV-JP-2026-000002,742,JP_JCT,JP,Japan,combined,jct,taxable,52450397,0.100000,5245040,False,,JP-S-DOMESTIC-B2B,2
+CINV-JP-2026-000002,743,JP_JCT,JP,Japan,combined,jct,taxable,2649658,0.100000,264966,False,,JP-S-DOMESTIC-B2B,2
+CINV-JP-2026-000002,744,JP_JCT,JP,Japan,combined,jct,taxable,3892317,0.100000,389232,False,,JP-S-DOMESTIC-B2B,2
+CINV-JP-2026-000002,745,JP_JCT,JP,Japan,combined,jct,taxable,24279922,0.100000,2427992,False,,JP-S-DOMESTIC-B2B,2
+CINV-JP-2026-000002,746,JP_JCT,JP,Japan,combined,jct,taxable,34683405,0.100000,3468341,False,,JP-S-DOMESTIC-B2B,2
+CINV-JP-2026-000002,747,JP_JCT,JP,Japan,combined,jct,taxable,753255,0.100000,75325,False,,JP-S-DOMESTIC-B2B,2
+CINV-JP-2026-000002,748,JP_JCT,JP,Japan,combined,jct,taxable,1133268,0.100000,113327,False,,JP-S-DOMESTIC-B2B,2
+CINV-JP-2026-000002,749,JP_JCT,JP,Japan,combined,jct,taxable,7279755,0.100000,727975,False,,JP-S-DOMESTIC-B2B,2
+CINV-JP-2026-000002,750,JP_JCT,JP,Japan,combined,jct,taxable,9963295,0.100000,996330,False,,JP-S-DOMESTIC-B2B,2
+CINV-SG-2026-000002,751,SG_GST,SG,Singapore,country,gst,taxable,1034229,0.090000,93081,False,,SG-S-DOMESTIC,3
+CINV-SG-2026-000002,752,SG_GST,SG,Singapore,country,gst,taxable,1517390,0.090000,136565,False,,SG-S-DOMESTIC,3
+CINV-SG-2026-000002,753,SG_GST,SG,Singapore,country,gst,taxable,9681735,0.090000,871356,False,,SG-S-DOMESTIC,3
+CINV-SG-2026-000002,754,SG_GST,SG,Singapore,country,gst,taxable,13315484,0.090000,1198393,False,,SG-S-DOMESTIC,3
+CINV-SG-2026-000002,755,SG_GST,SG,Singapore,country,gst,taxable,638014,0.090000,57421,False,,SG-S-DOMESTIC,3
+CINV-SG-2026-000002,756,SG_GST,SG,Singapore,country,gst,taxable,985163,0.090000,88665,False,,SG-S-DOMESTIC,3
+CINV-SG-2026-000002,757,SG_GST,SG,Singapore,country,gst,taxable,6217209,0.090000,559549,False,,SG-S-DOMESTIC,3
+CINV-SG-2026-000002,758,SG_GST,SG,Singapore,country,gst,taxable,8584082,0.090000,772567,False,,SG-S-DOMESTIC,3
+CINV-SG-2026-000002,759,SG_GST,SG,Singapore,country,gst,taxable,188514,0.090000,16966,False,,SG-S-DOMESTIC,3
+CINV-SG-2026-000002,760,SG_GST,SG,Singapore,country,gst,taxable,276529,0.090000,24888,False,,SG-S-DOMESTIC,3
+CINV-SG-2026-000002,761,SG_GST,SG,Singapore,country,gst,taxable,1765959,0.090000,158936,False,,SG-S-DOMESTIC,3
+CINV-SG-2026-000002,762,SG_GST,SG,Singapore,country,gst,taxable,2475675,0.090000,222811,False,,SG-S-DOMESTIC,3
+SINV-US-2026-000012,811,US_SUT,US-TX-AUSTIN,"Austin, Texas",combined,sales_use,use_tax_accrual,4200000,0.082500,346500,True,0,US-P-DOMESTIC,4
+SINV-US-2026-000013,812,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,overcharged,0,0.086250,10350000,False,10350000,US-P-DOMESTIC,4
+SINV-US-2026-000014,813,US_SUT,US,"San Francisco, CA, US",country,sales,out_of_scope,8500000,0.000000,0,False,,US-P-IMPORT-SERVICES,3
+SINV-JP-2026-000005,814,JP_JCT,JP,Japan,combined,jct,vendor_charged,220000,0.100000,22000,False,22000,JP-P-NON-QUALIFIED,2
+SINV-JP-2026-000006,815,JP_JCT,JP,Japan,combined,jct,vendor_charged,3200000,0.100000,320000,False,320000,JP-P-QUALIFIED,2
+SINV-US-2026-000015,816,US_SUT,US-CA-SF,"San Francisco, California",combined,sales,not_taxable,0,0.000000,0,False,0,US-P-DOMESTIC,4

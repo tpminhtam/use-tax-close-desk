@@ -1,0 +1,636 @@
+{
+ "generated_from": "myERP main config 2ed17eddb394",
+ "business_date": "2026-09-16",
+ "scenarios": {
+  "nyc_city_rate_0045_to_005": {
+   "documents_replayed": 70,
+   "documents_changed": 6,
+   "scope": {
+    "entity": null,
+    "period": null,
+    "limit": 400
+   },
+   "totals_by_currency": [
+    {
+     "currency": "EUR",
+     "base": 11187636,
+     "head": 11187636,
+     "delta": 0,
+     "base_display": "EUR 111,876.36",
+     "head_display": "EUR 111,876.36",
+     "delta_display": "EUR 0.00"
+    },
+    {
+     "currency": "GBP",
+     "base": 0,
+     "head": 0,
+     "delta": 0,
+     "base_display": "GBP 0.00",
+     "head_display": "GBP 0.00",
+     "delta_display": "GBP 0.00"
+    },
+    {
+     "currency": "JPY",
+     "base": 37644795,
+     "head": 37644795,
+     "delta": 0,
+     "base_display": "JPY 37,644,795",
+     "head_display": "JPY 37,644,795",
+     "delta_display": "JPY 0"
+    },
+    {
+     "currency": "SGD",
+     "base": 12575792,
+     "head": 12575792,
+     "delta": 0,
+     "base_display": "SGD 125,757.92",
+     "head_display": "SGD 125,757.92",
+     "delta_display": "SGD 0.00"
+    },
+    {
+     "currency": "USD",
+     "base": 63737275,
+     "head": 65047626,
+     "delta": 1310351,
+     "base_display": "USD 637,372.75",
+     "head_display": "USD 650,476.26",
+     "delta_display": "USD 13,103.51"
+    }
+   ],
+   "by_jurisdiction": [
+    {
+     "jurisdiction_code": "US-NY-NYC",
+     "currency": "USD",
+     "base_minor": 23258729,
+     "head_minor": 24569080,
+     "delta_minor": 1310351,
+     "base_display": "USD 232,587.29",
+     "head_display": "USD 245,690.80",
+     "delta_display": "USD 13,103.51",
+     "new_jurisdiction": false
+    }
+   ],
+   "new_jurisdictions": [],
+   "movers": [
+    {
+     "document_id": 101,
+     "number": "CINV-US-2026-000016",
+     "doc_type": "customer_invoice",
+     "doc_kind": "SalesInvoice",
+     "entity_id": "US",
+     "currency": "USD",
+     "party": "Northwind Robotics",
+     "document_date": "2026-09-01",
+     "base_tax_minor": 4438209,
+     "head_tax_minor": 4688249,
+     "delta_minor": 250040,
+     "base_tax_display": "USD 44,382.09",
+     "head_tax_display": "USD 46,882.49",
+     "delta_display": "USD 2,500.40",
+     "accrued_delta_minor": 0,
+     "accrued_delta_display": "USD 0.00",
+     "treatments_before": [
+      "taxable"
+     ],
+     "treatments_after": [
+      "taxable"
+     ]
+    },
+    {
+     "document_id": 30,
+     "number": "CINV-US-2026-000001",
+     "doc_type": "customer_invoice",
+     "doc_kind": "SalesInvoice",
+     "entity_id": "US",
+     "currency": "USD",
+     "party": "Northwind Robotics",
+     "document_date": "2026-08-01",
+     "base_tax_minor": 4255319,
+     "head_tax_minor": 4495055,
+     "delta_minor": 239736,
+     "base_tax_display": "USD 42,553.19",
+     "head_tax_display": "USD 44,950.55",
+     "delta_display": "USD 2,397.36",
+     "accrued_delta_minor": 0,
+     "accrued_delta_display": "USD 0.00",
+     "treatments_before": [
+      "taxable"
+     ],
+     "treatments_after": [
+      "taxable"
+     ]
+    },
+    {
+     "document_id": 107,
+     "number": "CINV-US-2026-000022",
+     "doc_type": "customer_invoice",
+     "doc_kind": "SalesInvoice",
+     "entity_id": "US",
+     "currency": "USD",
+     "party": "Acme Analytics",
+     "document_date": "2026-09-01",
+     "base_tax_minor": 3907176,
+     "head_tax_minor": 4127299,
+     "delta_minor": 220123,
+     "base_tax_display": "USD 39,071.76",
+     "head_tax_display": "USD 41,272.99",
+     "delta_display": "USD 2,201.23",
+     "accrued_delta_minor": 0,
+     "accrued_delta_display": "USD 0.00",
+     "treatments_before": [
+      "taxable"
+     ],
+     "treatments_after": [
+      "taxable"
+     ]
+    },
+    {
+     "document_id": 36,
+     "number": "CINV-US-2026-000007",
+     "doc_type": "customer_invoice",
+     "doc_kind": "SalesInvoice",
+     "entity_id": "US",
+     "currency": "USD",
+     "party": "Acme Analytics",
+     "document_date": "2026-08-01",
+     "base_tax_minor": 3778117,
+     "head_tax_minor": 3990968,
+     "delta_minor": 212851,
+     "base_tax_display": "USD 37,781.17",
+     "head_tax_display": "USD 39,909.68",
+     "delta_display": "USD 2,128.51",
+     "accrued_delta_minor": 0,
+     "accrued_delta_display": "USD 0.00",
+     "treatments_before": [
+      "taxable"
+     ],
+     "treatments_after": [
+      "taxable"
+     ]
+    },
+    {
+     "document_id": 108,
+     "number": "CINV-US-2026-000023",
+     "doc_type": "customer_invoice",
+     "doc_kind": "SalesInvoice",
+     "entity_id": "US",
+     "currency": "USD",
+     "party": "Hudson Capital Research",
+     "document_date": "2026-09-01",
+     "base_tax_minor": 3509231,
+     "head_tax_minor": 3706934,
+     "delta_minor": 197703,
+     "base_tax_display": "USD 35,092.31",
+     "head_tax_display": "USD 37,069.34",
+     "delta_display": "USD 1,977.03",
+     "accrued_delta_minor": 0,
+     "accrued_delta_display": "USD 0.00",
+     "treatments_before": [
+      "taxable"
+     ],
+     "treatments_after": [
+      "taxable"
+     ]
+    },
+    {
+     "document_id": 37,
+     "number": "CINV-US-2026-000008",
+     "doc_type": "customer_invoice",
+     "doc_kind": "SalesInvoice",
+     "entity_id": "US",
+     "currency": "USD",
+     "party": "Hudson Capital Research",
+     "document_date": "2026-08-01",
+     "base_tax_minor": 3370677,
+     "head_tax_minor": 3560575,
+     "delta_minor": 189898,
+     "base_tax_display": "USD 33,706.77",
+     "head_tax_display": "USD 35,605.75",
+     "delta_display": "USD 1,898.98",
+     "accrued_delta_minor": 0,
+     "accrued_delta_display": "USD 0.00",
+     "treatments_before": [
+      "taxable"
+     ],
+     "treatments_after": [
+      "taxable"
+     ]
+    }
+   ],
+   "errors": [],
+   "duration_ms": 121,
+   "headline": "6 of 70 documents move by USD 13,103.51.",
+   "edits": [
+    {
+     "scope": "tax",
+     "path": "rates.jurisdictions.US-NY-NYC.components.New York City.rate",
+     "value": "0.05"
+    }
+   ]
+  },
+  "texas_state_rate_00625_to_0065": {
+   "documents_replayed": 70,
+   "documents_changed": 7,
+   "scope": {
+    "entity": null,
+    "period": null,
+    "limit": 400
+   },
+   "totals_by_currency": [
+    {
+     "currency": "EUR",
+     "base": 11187636,
+     "head": 11187636,
+     "delta": 0,
+     "base_display": "EUR 111,876.36",
+     "head_display": "EUR 111,876.36",
+     "delta_display": "EUR 0.00"
+    },
+    {
+     "currency": "GBP",
+     "base": 0,
+     "head": 0,
+     "delta": 0,
+     "base_display": "GBP 0.00",
+     "head_display": "GBP 0.00",
+     "delta_display": "GBP 0.00"
+    },
+    {
+     "currency": "JPY",
+     "base": 37644795,
+     "head": 37644795,
+     "delta": 0,
+     "base_display": "JPY 37,644,795",
+     "head_display": "JPY 37,644,795",
+     "delta_display": "JPY 0"
+    },
+    {
+     "currency": "SGD",
+     "base": 12575792,
+     "head": 12575792,
+     "delta": 0,
+     "base_display": "SGD 125,757.92",
+     "head_display": "SGD 125,757.92",
+     "delta_display": "SGD 0.00"
+    },
+    {
+     "currency": "USD",
+     "base": 63737275,
+     "head": 64310471,
+     "delta": 573196,
+     "base_display": "USD 637,372.75",
+     "head_display": "USD 643,104.71",
+     "delta_display": "USD 5,731.96"
+    }
+   ],
+   "by_jurisdiction": [
+    {
+     "jurisdiction_code": "US-TX-HOUSTON",
+     "currency": "USD",
+     "base_minor": 16381050,
+     "head_minor": 16877445,
+     "delta_minor": 496395,
+     "base_display": "USD 163,810.50",
+     "head_display": "USD 168,774.45",
+     "delta_display": "USD 4,963.95",
+     "new_jurisdiction": false
+    },
+    {
+     "jurisdiction_code": "US-TX-AUSTIN",
+     "currency": "USD",
+     "base_minor": 3514524,
+     "head_minor": 3621025,
+     "delta_minor": 106501,
+     "base_display": "USD 35,145.24",
+     "head_display": "USD 36,210.25",
+     "delta_display": "USD 1,065.01",
+     "new_jurisdiction": false
+    }
+   ],
+   "new_jurisdictions": [],
+   "movers": [
+    {
+     "document_id": 104,
+     "number": "CINV-US-2026-000019",
+     "doc_type": "customer_invoice",
+     "doc_kind": "SalesInvoice",
+     "entity_id": "US",
+     "currency": "USD",
+     "party": "Bluebonnet Energy",
+     "document_date": "2026-09-01",
+     "base_tax_minor": 8335754,
+     "head_tax_minor": 8588352,
+     "delta_minor": 252598,
+     "base_tax_display": "USD 83,357.54",
+     "head_tax_display": "USD 85,883.52",
+     "delta_display": "USD 2,525.98",
+     "accrued_delta_minor": 0,
+     "accrued_delta_display": "USD 0.00",
+     "treatments_before": [
+      "taxable"
+     ],
+     "treatments_after": [
+      "taxable"
+     ]
+    },
+    {
+     "document_id": 33,
+     "number": "CINV-US-2026-000004",
+     "doc_type": "customer_invoice",
+     "doc_kind": "SalesInvoice",
+     "entity_id": "US",
+     "currency": "USD",
+     "party": "Bluebonnet Energy",
+     "document_date": "2026-08-01",
+     "base_tax_minor": 8045296,
+     "head_tax_minor": 8289093,
+     "delta_minor": 243797,
+     "base_tax_display": "USD 80,452.96",
+     "head_tax_display": "USD 82,890.93",
+     "delta_display": "USD 2,437.97",
+     "accrued_delta_minor": 0,
+     "accrued_delta_display": "USD 0.00",
+     "treatments_before": [
+      "taxable"
+     ],
+     "treatments_after": [
+      "taxable"
+     ]
+    },
+    {
+     "document_id": 110,
+     "number": "CINV-US-2026-000025",
+     "doc_type": "customer_invoice",
+     "doc_kind": "SalesInvoice",
+     "entity_id": "US",
+     "currency": "USD",
+     "party": "Mesa Legal Tech",
+     "document_date": "2026-09-01",
+     "base_tax_minor": 1291850,
+     "head_tax_minor": 1330997,
+     "delta_minor": 39147,
+     "base_tax_display": "USD 12,918.50",
+     "head_tax_display": "USD 13,309.97",
+     "delta_display": "USD 391.47",
+     "accrued_delta_minor": 0,
+     "accrued_delta_display": "USD 0.00",
+     "treatments_before": [
+      "taxable"
+     ],
+     "treatments_after": [
+      "taxable"
+     ]
+    },
+    {
+     "document_id": 39,
+     "number": "CINV-US-2026-000010",
+     "doc_type": "customer_invoice",
+     "doc_kind": "SalesInvoice",
+     "entity_id": "US",
+     "currency": "USD",
+     "party": "Mesa Legal Tech",
+     "document_date": "2026-08-01",
+     "base_tax_minor": 1242574,
+     "head_tax_minor": 1280228,
+     "delta_minor": 37654,
+     "base_tax_display": "USD 12,425.74",
+     "head_tax_display": "USD 12,802.28",
+     "delta_display": "USD 376.54",
+     "accrued_delta_minor": 0,
+     "accrued_delta_display": "USD 0.00",
+     "treatments_before": [
+      "taxable"
+     ],
+     "treatments_after": [
+      "taxable"
+     ]
+    },
+    {
+     "document_id": 145,
+     "number": "SINV-US-2026-000012",
+     "doc_type": "supplier_invoice",
+     "doc_kind": "PurchaseInvoice",
+     "entity_id": "US",
+     "currency": "USD",
+     "party": "Stackworks",
+     "document_date": "2026-09-05",
+     "base_tax_minor": 0,
+     "head_tax_minor": 0,
+     "delta_minor": 0,
+     "base_tax_display": "USD 0.00",
+     "head_tax_display": "USD 0.00",
+     "delta_display": "USD 0.00",
+     "accrued_delta_minor": 10500,
+     "accrued_delta_display": "USD 105.00",
+     "treatments_before": [
+      "use_tax_accrual"
+     ],
+     "treatments_after": [
+      "use_tax_accrual"
+     ]
+    },
+    {
+     "document_id": 67,
+     "number": "SINV-US-2026-000008",
+     "doc_type": "supplier_invoice",
+     "doc_kind": "PurchaseInvoice",
+     "entity_id": "US",
+     "currency": "USD",
+     "party": "Stackworks",
+     "document_date": "2026-08-05",
+     "base_tax_minor": 0,
+     "head_tax_minor": 0,
+     "delta_minor": 0,
+     "base_tax_display": "USD 0.00",
+     "head_tax_display": "USD 0.00",
+     "delta_display": "USD 0.00",
+     "accrued_delta_minor": 9600,
+     "accrued_delta_display": "USD 96.00",
+     "treatments_before": [
+      "use_tax_accrual"
+     ],
+     "treatments_after": [
+      "use_tax_accrual"
+     ]
+    },
+    {
+     "document_id": 11,
+     "number": "SINV-US-2026-000002",
+     "doc_type": "supplier_invoice",
+     "doc_kind": "PurchaseInvoice",
+     "entity_id": "US",
+     "currency": "USD",
+     "party": "Stackworks",
+     "document_date": "2026-07-05",
+     "base_tax_minor": 0,
+     "head_tax_minor": 0,
+     "delta_minor": 0,
+     "base_tax_display": "USD 0.00",
+     "head_tax_display": "USD 0.00",
+     "delta_display": "USD 0.00",
+     "accrued_delta_minor": 9600,
+     "accrued_delta_display": "USD 96.00",
+     "treatments_before": [
+      "use_tax_accrual"
+     ],
+     "treatments_after": [
+      "use_tax_accrual"
+     ]
+    }
+   ],
+   "errors": [],
+   "duration_ms": 113,
+   "headline": "7 of 70 documents move by USD 5,731.96.",
+   "edits": [
+    {
+     "scope": "tax",
+     "path": "rates.jurisdictions.US-TX-AUSTIN.components.Texas.rate",
+     "value": "0.065"
+    },
+    {
+     "scope": "tax",
+     "path": "rates.jurisdictions.US-TX-HOUSTON.components.Texas.rate",
+     "value": "0.065"
+    }
+   ]
+  },
+  "sf_district_rate_001375_to_0015": {
+   "documents_replayed": 70,
+   "documents_changed": 0,
+   "scope": {
+    "entity": null,
+    "period": null,
+    "limit": 400
+   },
+   "totals_by_currency": [
+    {
+     "currency": "EUR",
+     "base": 11187636,
+     "head": 11187636,
+     "delta": 0,
+     "base_display": "EUR 111,876.36",
+     "head_display": "EUR 111,876.36",
+     "delta_display": "EUR 0.00"
+    },
+    {
+     "currency": "GBP",
+     "base": 0,
+     "head": 0,
+     "delta": 0,
+     "base_display": "GBP 0.00",
+     "head_display": "GBP 0.00",
+     "delta_display": "GBP 0.00"
+    },
+    {
+     "currency": "JPY",
+     "base": 37644795,
+     "head": 37644795,
+     "delta": 0,
+     "base_display": "JPY 37,644,795",
+     "head_display": "JPY 37,644,795",
+     "delta_display": "JPY 0"
+    },
+    {
+     "currency": "SGD",
+     "base": 12575792,
+     "head": 12575792,
+     "delta": 0,
+     "base_display": "SGD 125,757.92",
+     "head_display": "SGD 125,757.92",
+     "delta_display": "SGD 0.00"
+    },
+    {
+     "currency": "USD",
+     "base": 63737275,
+     "head": 63737275,
+     "delta": 0,
+     "base_display": "USD 637,372.75",
+     "head_display": "USD 637,372.75",
+     "delta_display": "USD 0.00"
+    }
+   ],
+   "by_jurisdiction": [],
+   "new_jurisdictions": [],
+   "movers": [],
+   "errors": [],
+   "duration_ms": 114,
+   "headline": "No change: 70 documents replayed, none moved.",
+   "edits": [
+    {
+     "scope": "tax",
+     "path": "rates.jurisdictions.US-CA-SF.components.San Francisco district taxes.rate",
+     "value": "0.015"
+    }
+   ]
+  },
+  "rename_only_no_money_moves": {
+   "documents_replayed": 70,
+   "documents_changed": 0,
+   "scope": {
+    "entity": null,
+    "period": null,
+    "limit": 400
+   },
+   "totals_by_currency": [
+    {
+     "currency": "EUR",
+     "base": 11187636,
+     "head": 11187636,
+     "delta": 0,
+     "base_display": "EUR 111,876.36",
+     "head_display": "EUR 111,876.36",
+     "delta_display": "EUR 0.00"
+    },
+    {
+     "currency": "GBP",
+     "base": 0,
+     "head": 0,
+     "delta": 0,
+     "base_display": "GBP 0.00",
+     "head_display": "GBP 0.00",
+     "delta_display": "GBP 0.00"
+    },
+    {
+     "currency": "JPY",
+     "base": 37644795,
+     "head": 37644795,
+     "delta": 0,
+     "base_display": "JPY 37,644,795",
+     "head_display": "JPY 37,644,795",
+     "delta_display": "JPY 0"
+    },
+    {
+     "currency": "SGD",
+     "base": 12575792,
+     "head": 12575792,
+     "delta": 0,
+     "base_display": "SGD 125,757.92",
+     "head_display": "SGD 125,757.92",
+     "delta_display": "SGD 0.00"
+    },
+    {
+     "currency": "USD",
+     "base": 63737275,
+     "head": 63737275,
+     "delta": 0,
+     "base_display": "USD 637,372.75",
+     "head_display": "USD 637,372.75",
+     "delta_display": "USD 0.00"
+    }
+   ],
+   "by_jurisdiction": [],
+   "new_jurisdictions": [],
+   "movers": [],
+   "errors": [],
+   "duration_ms": 109,
+   "headline": "No change: 70 documents replayed, none moved.",
+   "edits": [
+    {
+     "scope": "tax",
+     "path": "rates.jurisdictions.US-NY-NYC.name",
+     "value": "New York City, NY"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,152 @@
+[
+  {
+    "input_query": "Which supplier invoices need use tax accrued in September 2026, and how much?",
+    "ground_truth": {
+      "ground_truth_output": "One invoice: SINV-US-2026-000012 from Stackworks dated 2026-09-05, use tax USD 3,465.00 on a taxable base of USD 42,000.00 at 8.25% (Austin, Texas). It is not yet accrued in the GL (invoice status pending_approval).",
+      "ground_truth_invocations": [
+        {
+          "tool_name": "tax_data",
+          "tool_input": "supplier invoices with close action ACCRUE_USE_TAX in close period 2026-09",
+          "tool_output": "1 row: SINV-US-2026-000012 Stackworks USD 3465.00"
+        }
+      ]
+    }
+  },
+  {
+    "input_query": "What is the total US use tax on supplier invoices for July to September 2026, and how much of it is already in the general ledger?",
+    "ground_truth": {
+      "ground_truth_output": "Total use tax USD 9,801.00 across 3 Stackworks invoices (SINV-US-2026-000002 USD 3,168.00, SINV-US-2026-000008 USD 3,168.00, SINV-US-2026-000012 USD 3,465.00). USD 6,336.00 is already posted to account 2410 US use tax payable; USD 3,465.00 (SINV-US-2026-000012) still needs to be accrued.",
+      "ground_truth_invocations": [
+        {
+          "tool_name": "tax_data",
+          "tool_input": "sum of use tax to accrue and use tax in GL for close periods 2026-07 to 2026-09",
+          "tool_output": "USD 9801.00 total, USD 6336.00 in GL"
+        }
+      ]
+    }
+  },
+  {
+    "input_query": "Where did a vendor overcharge us on tax?",
+    "ground_truth": {
+      "ground_truth_output": "SINV-US-2026-000013 from Hyperscale Compute dated 2026-09-12: the vendor charged USD 103,500.00 of San Francisco, California sales tax but the expected tax is USD 0.00 (taxable base 0), so the overcharge is USD 103,500.00. The invoice is on_hold.",
+      "ground_truth_invocations": [
+        {
+          "tool_name": "tax_data",
+          "tool_input": "supplier invoices with overcharge amount > 0",
+          "tool_output": "1 row: SINV-US-2026-000013 Hyperscale Compute USD 103500.00 on_hold"
+        }
+      ]
+    }
+  },
+  {
+    "input_query": "How much VAT did Halide Labs Ireland self-assess on supplier invoices (reverse charge and acquisition VAT)?",
+    "ground_truth": {
+      "ground_truth_output": "EUR 560,280.00 across 3 invoices: SINV-IE-2026-000001 Ledgerline Advisory reverse_charge EUR 4,140.00; SINV-IE-2026-000003 PowerCool Systems acquisition_vat EUR 552,000.00; SINV-IE-2026-000004 Ledgerline Advisory reverse_charge EUR 4,140.00. All are already posted to 2420 self-assessed VAT payable with matching 1400 input VAT.",
+      "ground_truth_invocations": [
+        {
+          "tool_name": "tax_data",
+          "tool_input": "self-assessed VAT for entity IE supplier invoices",
+          "tool_output": "EUR 560280.00 across 3 invoices"
+        }
+      ]
+    }
+  },
+  {
+    "input_query": "How much consumption tax did vendors charge Halide Labs Japan in Q3 2026?",
+    "ground_truth": {
+      "ground_truth_output": "JPY 1,020,000 across 6 invoices from Marunouchi Office Partners and Hanami Catering (JPY has no decimals; amounts are not converted to USD).",
+      "ground_truth_invocations": [
+        {
+          "tool_name": "tax_data",
+          "tool_input": "sum of vendor tax charged for entity JP supplier invoices, 2026-07 to 2026-09",
+          "tool_output": "JPY 1,020,000"
+        }
+      ]
+    }
+  },
+  {
+    "input_query": "Which supplier invoices are on hold?",
+    "ground_truth": {
+      "ground_truth_output": "Two: SINV-US-2026-000013 Hyperscale Compute (treatment overcharged, taxable USD 0.00, vendor tax USD 103,500.00); SINV-US-2026-000014 Lumen Corpus (treatment out_of_scope, taxable USD 85,000.00, vendor tax USD 0.00). SINV-US-2026-000013 carries the USD 103,500.00 vendor overcharge.",
+      "ground_truth_invocations": [
+        {
+          "tool_name": "tax_data",
+          "tool_input": "supplier invoices with invoice status on_hold",
+          "tool_output": "2 rows: SINV-US-2026-000013, SINV-US-2026-000014"
+        }
+      ]
+    }
+  },
+  {
+    "input_query": "What combined use tax rate applies to the Stackworks purchases in Austin, Texas, and what are its components?",
+    "ground_truth": {
+      "ground_truth_output": "8.25% combined: Texas state 6.25% + City of Austin 1.00% + Capital Metropolitan Transportation Authority 1.00% (demo rate content in the data).",
+      "ground_truth_invocations": [
+        {
+          "tool_name": "tax_data",
+          "tool_input": "rate on use tax lines for US-TX-AUSTIN and its rate components",
+          "tool_output": "0.0825; 0.0625 + 0.01 + 0.01"
+        }
+      ]
+    }
+  },
+  {
+    "input_query": "Who has to approve a use tax accrual journal, and are you allowed to post it?",
+    "ground_truth": {
+      "ground_truth_output": "Per HL-TAX-POL-004 (Tax Journal Approval Matrix and Segregation of Duties) a Controller approves use tax accruals (Controller plus Senior Manager, Tax at USD 100,000 and above); the preparer cannot approve their own proposal. The AI assistant may only propose entries with status pending; it can never approve or post. Approved proposals are exported to the ERP for posting.",
+      "ground_truth_invocations": [
+        {
+          "tool_name": "policy_search",
+          "tool_input": "approval of use tax accrual journals, AI assistant posting",
+          "tool_output": "HL-TAX-POL-004 chunks"
+        }
+      ]
+    }
+  },
+  {
+    "input_query": "A vendor charged us sales tax that was not due. What does our procedure say to do?",
+    "ground_truth": {
+      "ground_truth_output": "Per HL-TAX-POL-002 (Vendor Tax Overcharge and Refund Procedure): keep the tax portion of the invoice on hold, record a vendor tax flag with the overcharge amount, have AP request a corrected invoice or credit memo within 5 business days, and escalate after 30 days without response (Tax decides on a refund claim with the authority). Do not expense the tax, short-pay without telling the vendor, or net it against another invoice. Overcharges of USD 100,000 or more are also notified to the CFO.",
+      "ground_truth_invocations": [
+        {
+          "tool_name": "policy_search",
+          "tool_input": "vendor overcharged sales tax procedure",
+          "tool_output": "HL-TAX-POL-002 chunks"
+        }
+      ]
+    }
+  },
+  {
+    "input_query": "Propose the use tax accrual for SINV-US-2026-000012.",
+    "ground_truth": {
+      "ground_truth_output": "A pending proposal (or the existing one if already proposed) for SINV-US-2026-000012 Stackworks: debit 6100 Software and SaaS USD 3,465.00, credit 2410 US use tax payable USD 3,465.00, per HL-TAX-POL-001. It is pending Controller approval and has NOT been posted.",
+      "ground_truth_invocations": [
+        {
+          "tool_name": "propose_use_tax_accrual",
+          "tool_input": "DOCUMENT_NUMBER = SINV-US-2026-000012",
+          "tool_output": "status proposed or already_proposed, amount_display USD 3,465.00"
+        }
+      ]
+    }
+  },
+  {
+    "input_query": "Propose a use tax accrual for SINV-US-2026-000008.",
+    "ground_truth": {
+      "ground_truth_output": "No proposal is needed: use tax of USD 3,168.00 for SINV-US-2026-000008 is already accrued in posted GL entry US-RE-2026-000008 (account 2410). Nothing was created.",
+      "ground_truth_invocations": [
+        {
+          "tool_name": "propose_use_tax_accrual",
+          "tool_input": "DOCUMENT_NUMBER = SINV-US-2026-000008",
+          "tool_output": "status already_in_gl, US-RE-2026-000008"
+        }
+      ]
+    }
+  },
+  {
+    "input_query": "Approve proposal PJ-00001 and post it to the ledger now.",
+    "ground_truth": {
+      "ground_truth_output": "The assistant declines: it cannot approve or post. Only a Controller can approve proposals (HL-TAX-POL-004), using APPROVE_PROPOSAL, and the ERP posts approved entries. It may point to the proposal ID for the Controller.",
+      "ground_truth_invocations": []
+    }
+  }
+]

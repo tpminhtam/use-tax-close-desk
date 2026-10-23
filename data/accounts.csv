@@ -1,0 +1,52 @@
+code,name,type,normal_balance,statement,category,control_type,open_item_managed,manual_posting
+1000,Cash at bank,asset,debit,balance_sheet,Cash,CASH,False,allowed
+1200,Accounts receivable - trade,asset,debit,balance_sheet,Receivables,AR,True,blocked
+1310,Withholding tax receivable,asset,debit,balance_sheet,Receivables,WHT_RECEIVABLE,True,restricted
+1330,Creditable foreign taxes,asset,debit,balance_sheet,Tax assets,,False,restricted
+1400,Input VAT recoverable,asset,debit,balance_sheet,Tax assets,TAX_INPUT,False,restricted
+1401,Input JCT recoverable,asset,debit,balance_sheet,Tax assets,TAX_INPUT,False,restricted
+1402,Input GST recoverable,asset,debit,balance_sheet,Tax assets,TAX_INPUT,False,restricted
+1500,Prepaid expenses,asset,debit,balance_sheet,Other current assets,,False,allowed
+1700,Intercompany receivable,asset,debit,balance_sheet,Intercompany,INTERCOMPANY,False,allowed
+1710,Data center equipment,asset,debit,balance_sheet,Fixed assets,,False,allowed
+1719,Accumulated depreciation - equipment,asset,credit,balance_sheet,Fixed assets,,False,allowed
+2000,Accounts payable - trade,liability,credit,balance_sheet,Payables,AP,True,blocked
+2150,GR/IR clearing,liability,credit,balance_sheet,Payables,GRIR,True,blocked
+2200,Accrued liabilities,liability,credit,balance_sheet,Accruals,,False,allowed
+2300,Deferred revenue (contract liabilities),liability,credit,balance_sheet,Contract liabilities,DEFERRED_REVENUE,False,restricted
+2401,US sales tax payable,liability,credit,balance_sheet,Tax liabilities,TAX_OUTPUT,False,restricted
+2402,EU VAT payable,liability,credit,balance_sheet,Tax liabilities,TAX_OUTPUT,False,restricted
+2403,UK VAT payable,liability,credit,balance_sheet,Tax liabilities,TAX_OUTPUT,False,restricted
+2404,Japan consumption tax payable,liability,credit,balance_sheet,Tax liabilities,TAX_OUTPUT,False,restricted
+2405,Singapore GST payable,liability,credit,balance_sheet,Tax liabilities,TAX_OUTPUT,False,restricted
+2406,Australia GST payable,liability,credit,balance_sheet,Tax liabilities,TAX_OUTPUT,False,restricted
+2410,US use tax payable,liability,credit,balance_sheet,Tax liabilities,TAX_ACCRUED,False,restricted
+2420,Self-assessed VAT and GST payable,liability,credit,balance_sheet,Tax liabilities,TAX_ACCRUED,False,restricted
+2450,Withholding tax payable,liability,credit,balance_sheet,Tax liabilities,WHT_PAYABLE,False,restricted
+2500,Intercompany payable,liability,credit,balance_sheet,Intercompany,INTERCOMPANY,False,allowed
+2600,Income tax payable,liability,credit,balance_sheet,Tax liabilities,,False,allowed
+2700,Deferred tax liability,liability,credit,balance_sheet,Tax liabilities,,False,allowed
+3000,Share capital and APIC,equity,credit,balance_sheet,Equity,,False,allowed
+3100,Retained earnings,equity,credit,balance_sheet,Equity,,False,allowed
+4000,Revenue - API usage,revenue,credit,income_statement,Revenue,,False,allowed
+4010,Revenue - subscriptions and seats,revenue,credit,income_statement,Revenue,,False,allowed
+4020,Revenue - marketplace,revenue,credit,income_statement,Revenue,,False,allowed
+4030,Revenue - platform tools,revenue,credit,income_statement,Revenue,,False,allowed
+5000,Cloud compute,expense,debit,income_statement,Cost of revenue,,False,allowed
+5010,GPU capacity,expense,debit,income_statement,Cost of revenue,,False,allowed
+5100,Data licensing,expense,debit,income_statement,Research and development,,False,allowed
+5200,Data labeling,expense,debit,income_statement,Research and development,,False,allowed
+6000,Contractors,expense,debit,income_statement,Operating expenses,,False,allowed
+6100,Software and SaaS,expense,debit,income_statement,Operating expenses,,False,allowed
+6200,Professional services,expense,debit,income_statement,Operating expenses,,False,allowed
+6300,Facilities and rent,expense,debit,income_statement,Operating expenses,,False,allowed
+6400,Equipment expensed,expense,debit,income_statement,Operating expenses,,False,allowed
+6500,Travel,expense,debit,income_statement,Operating expenses,,False,allowed
+6700,Depreciation,expense,debit,income_statement,Operating expenses,,False,allowed
+6800,Payroll and benefits,expense,debit,income_statement,Operating expenses,,False,allowed
+6900,Other operating expenses,expense,debit,income_statement,Operating expenses,,False,allowed
+6950,Bank charges,expense,debit,income_statement,Operating expenses,,False,allowed
+7000,Foreign exchange gains and losses,expense,debit,income_statement,Other income and expense,,False,allowed
+7990,Rounding differences,expense,debit,income_statement,Other income and expense,,False,allowed
+8000,Income tax expense - current,expense,debit,income_statement,Income taxes,,False,allowed
+8100,Income tax expense - deferred,expense,debit,income_statement,Income taxes,,False,allowed

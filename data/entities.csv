@@ -1,0 +1,5 @@
+id,name,legal_name,country,entity_currency,group_currency,role
+US,Halide Labs,"Halide Labs, PBC",US,USD,USD,Parent · rest-of-world contracting entity
+IE,Halide Labs Ireland,Halide Labs Ireland Limited,IE,EUR,USD,"EEA, UK and Switzerland billing entity"
+JP,Halide Labs Japan,Halide Labs Japan KK,JP,JPY,USD,Japan entity · qualified invoice issuer
+SG,Halide Labs Asia,Halide Labs Asia Pte. Ltd.,SG,SGD,USD,APAC hub

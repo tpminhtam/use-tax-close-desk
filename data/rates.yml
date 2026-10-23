@@ -1,0 +1,136 @@
+version: "2026.09.1"
+notice: >
+  Demo rate content, effective-dated. Each jurisdiction lists its components (state, county, city,
+  district; or national and local) so a determination can show exactly which rates it stacked.
+  Verify current rates with the authority before relying on them.
+
+jurisdictions:
+  - code: US-NY-NYC
+    name: New York City, New York
+    regime: US_SUT
+    country: US
+    region: NY
+    components:
+      - { level: state, name: New York State, rate: "0.04", effective_from: 2005-06-01 }
+      - { level: city, name: New York City, rate: "0.045", effective_from: 2009-08-01 }
+      - { level: district, name: Metropolitan Commuter Transportation District, rate: "0.00375", effective_from: 2005-06-01 }
+
+  - code: US-TX-AUSTIN
+    name: Austin, Texas
+    regime: US_SUT
+    country: US
+    region: TX
+    components:
+      - { level: state, name: Texas, rate: "0.0625", effective_from: 1990-07-01 }
+      - { level: city, name: City of Austin, rate: "0.01", effective_from: 1990-07-01 }
+      - { level: district, name: Capital Metropolitan Transportation Authority, rate: "0.01", effective_from: 1990-07-01 }
+
+  - code: US-TX-HOUSTON
+    name: Houston, Texas
+    regime: US_SUT
+    country: US
+    region: TX
+    components:
+      - { level: state, name: Texas, rate: "0.0625", effective_from: 1990-07-01 }
+      - { level: city, name: City of Houston, rate: "0.01", effective_from: 1990-07-01 }
+      - { level: district, name: Houston Metropolitan Transit Authority, rate: "0.01", effective_from: 1990-07-01 }
+
+  - code: US-WA-SEATTLE
+    name: Seattle, Washington
+    regime: US_SUT
+    country: US
+    region: WA
+    components:
+      - { level: state, name: Washington, rate: "0.065", effective_from: 1983-07-01 }
+      - { level: city, name: Seattle and regional transit (combined local), rate: "0.0375", effective_from: 2017-04-01, effective_to: 2025-03-31 }
+      - { level: city, name: Seattle and regional transit (combined local), rate: "0.0385", effective_from: 2025-04-01 }
+
+  - code: US-CA-SF
+    name: San Francisco, California
+    regime: US_SUT
+    country: US
+    region: CA
+    components:
+      - { level: state, name: California (including statewide local), rate: "0.0725", effective_from: 2017-01-01 }
+      - { level: district, name: San Francisco district taxes, rate: "0.01375", effective_from: 2023-01-01 }
+
+  - code: IE
+    name: Ireland
+    regime: EU_VAT
+    country: IE
+    components:
+      - { level: country, name: Ireland standard rate, rate: "0.23", effective_from: 2021-03-01 }
+
+  - code: DE
+    name: Germany
+    regime: EU_VAT
+    country: DE
+    components:
+      - { level: country, name: Germany standard rate, rate: "0.19", effective_from: 2021-01-01 }
+
+  - code: FR
+    name: France
+    regime: EU_VAT
+    country: FR
+    components:
+      - { level: country, name: France standard rate, rate: "0.20", effective_from: 2014-01-01 }
+
+  - code: NL
+    name: Netherlands
+    regime: EU_VAT
+    country: NL
+    components:
+      - { level: country, name: Netherlands standard rate, rate: "0.21", effective_from: 2012-10-01 }
+
+  - code: GB
+    name: United Kingdom
+    regime: UK_VAT
+    country: GB
+    components:
+      - { level: country, name: UK standard rate, rate: "0.20", effective_from: 2011-01-04 }
+
+  - code: JP
+    name: Japan
+    regime: JP_JCT
+    country: JP
+    components:
+      - { level: national, name: National consumption tax, rate: "0.078", effective_from: 2019-10-01 }
+      - { level: local, name: Local consumption tax, rate: "0.022", effective_from: 2019-10-01 }
+
+  - code: SG
+    name: Singapore
+    regime: SG_GST
+    country: SG
+    components:
+      - { level: country, name: Singapore GST, rate: "0.07", effective_from: 2007-07-01, effective_to: 2022-12-31 }
+      - { level: country, name: Singapore GST, rate: "0.08", effective_from: 2023-01-01, effective_to: 2023-12-31 }
+      - { level: country, name: Singapore GST, rate: "0.09", effective_from: 2024-01-01 }
+
+  - code: AU
+    name: Australia
+    regime: AU_GST
+    country: AU
+    components:
+      - { level: country, name: Australia GST, rate: "0.10", effective_from: 2000-07-01 }
+
+  - code: IN
+    name: India
+    regime: IN_GST
+    country: IN
+    components:
+      - { level: country, name: Integrated GST, rate: "0.18", effective_from: 2017-07-01 }
+
+  - code: CH
+    name: Switzerland
+    regime: CH_VAT
+    country: CH
+    components:
+      - { level: country, name: Swiss VAT standard rate, rate: "0.081", effective_from: 2024-01-01 }
+
+# Where a US customer or location has no mapped local jurisdiction, the state-level code is used.
+us_city_jurisdictions:
+  "NY|New York": US-NY-NYC
+  "TX|Austin": US-TX-AUSTIN
+  "TX|Houston": US-TX-HOUSTON
+  "WA|Seattle": US-WA-SEATTLE
+  "CA|San Francisco": US-CA-SF

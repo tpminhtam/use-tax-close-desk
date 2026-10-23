@@ -1,0 +1,134 @@
+number,entity_id,book_code,entry_type,posting_date,document_date,currency,header_text,source_document,status,rule_set,posted_by
+US-SA-2026-000001,US,BASE,SA,2026-07-01,2026-07-01,USD,Opening balances 1 July 2026 (migrated from legacy ledger),MJ-US-2026-000001,posted,manual_journal.posted,system
+IE-SA-2026-000001,IE,BASE,SA,2026-07-01,2026-07-01,EUR,Opening balances 1 July 2026,MJ-IE-2026-000001,posted,manual_journal.posted,system
+JP-SA-2026-000001,JP,BASE,SA,2026-07-01,2026-07-01,JPY,Opening balances 1 July 2026,MJ-JP-2026-000001,posted,manual_journal.posted,system
+SG-SA-2026-000001,SG,BASE,SA,2026-07-01,2026-07-01,SGD,Opening balances 1 July 2026,MJ-SG-2026-000001,posted,manual_journal.posted,system
+US-SA-2026-000002,US,BASE,SA,2026-07-01,2026-07-01,USD,Opening intercompany funding of subsidiaries,MJ-US-2026-000002,posted,manual_journal.posted,system
+US-DR-2026-000001,US,BASE,DR,2026-07-01,2026-07-01,USD,Credit purchase CRED-US-2026-000001 · Northwind Robotics,CRED-US-2026-000001,posted,credit_purchase.finalized,system
+US-DZ-2026-000001,US,BASE,DZ,2026-07-01,2026-07-01,USD,Receipt STL-US-2026-000001 · Northwind Robotics,STL-US-2026-000001,posted,settlement.customer_receipt,system
+IE-RE-2026-000002,IE,BASE,RE,2026-07-01,2026-07-01,EUR,Supplier invoice SINV-IE-2026-000002 · Liffey Workspace · ref LWS-202607,SINV-IE-2026-000002,posted,supplier_invoice.validated,system
+JP-RE-2026-000001,JP,BASE,RE,2026-07-01,2026-07-01,JPY,Supplier invoice SINV-JP-2026-000001 · Marunouchi Office Partners · ref MOP-07-2026,SINV-JP-2026-000001,posted,supplier_invoice.validated,system
+SG-RE-2026-000001,SG,BASE,RE,2026-07-03,2026-07-03,SGD,Supplier invoice SINV-SG-2026-000001 · Straits Data Centre · ref SDC-2026-0788,SINV-SG-2026-000001,posted,supplier_invoice.validated,system
+US-RE-2026-000002,US,BASE,RE,2026-07-05,2026-07-05,USD,Supplier invoice SINV-US-2026-000002 · Stackworks · ref SW-0726-1188,SINV-US-2026-000002,posted,supplier_invoice.validated,system
+IE-RE-2026-000001,IE,BASE,RE,2026-07-10,2026-07-10,EUR,Supplier invoice SINV-IE-2026-000001 · Ledgerline Advisory · ref LLA-07-7731,SINV-IE-2026-000001,posted,supplier_invoice.validated,system
+JP-RE-2026-000002,JP,BASE,RE,2026-07-14,2026-07-14,JPY,Supplier invoice SINV-JP-2026-000002 · Hanami Catering · ref HNM-0714,SINV-JP-2026-000002,posted,supplier_invoice.validated,system
+US-RE-2026-000006,US,BASE,RE,2026-07-15,2026-07-15,USD,Supplier invoice SINV-US-2026-000006 · Kavya Data Labs · ref KDL/2026-27/044,SINV-US-2026-000006,posted,supplier_invoice.validated,system
+US-RE-2026-000005,US,BASE,RE,2026-07-18,2026-07-18,USD,Supplier invoice SINV-US-2026-000005 · Labelwise Annotation · ref LW-0726-0913,SINV-US-2026-000005,posted,supplier_invoice.validated,system
+US-RE-2026-000003,US,BASE,RE,2026-07-20,2026-07-20,USD,Supplier invoice SINV-US-2026-000003 · Northstar Legal · ref NSL-2026-0259,SINV-US-2026-000003,posted,supplier_invoice.validated,system
+IE-WE-2026-000001,IE,BASE,WE,2026-07-20,2026-07-20,EUR,Receipt GR-IE-2026-000001 against PO-IE-2026-000001 · PowerCool Systems,GR-IE-2026-000001,posted,goods_receipt.posted,system
+IE-RE-2026-000003,IE,BASE,RE,2026-07-22,2026-07-22,EUR,Supplier invoice SINV-IE-2026-000003 · PowerCool Systems · ref PCS-2026-00418,SINV-IE-2026-000003,posted,supplier_invoice.validated,system
+US-RE-2026-000004,US,BASE,RE,2026-07-25,2026-07-25,USD,Supplier invoice SINV-US-2026-000004 · Rivera Engineering · ref RE-07-2026,SINV-US-2026-000004,posted,supplier_invoice.validated,system
+US-WE-2026-000001,US,BASE,WE,2026-07-31,2026-07-31,USD,Receipt GR-US-2026-000001 against PO-US-2026-000001 · Hyperscale Compute,GR-US-2026-000001,posted,goods_receipt.posted,system
+US-RE-2026-000001,US,BASE,RE,2026-07-31,2026-07-31,USD,Supplier invoice SINV-US-2026-000001 · Hyperscale Compute · ref HC-INV-202607-4471,SINV-US-2026-000001,posted,supplier_invoice.validated,system
+US-SA-2026-000003,US,BASE,SA,2026-07-31,2026-07-31,USD,Payroll accrual July 2026,MJ-US-2026-000003,posted,manual_journal.posted,system
+IE-SA-2026-000002,IE,BASE,SA,2026-07-31,2026-07-31,EUR,Payroll accrual July 2026,MJ-IE-2026-000002,posted,manual_journal.posted,system
+JP-SA-2026-000002,JP,BASE,SA,2026-07-31,2026-07-31,JPY,Payroll accrual July 2026,MJ-JP-2026-000002,posted,manual_journal.posted,system
+SG-SA-2026-000002,SG,BASE,SA,2026-07-31,2026-07-31,SGD,Payroll accrual July 2026,MJ-SG-2026-000002,posted,manual_journal.posted,system
+US-SA-2026-000004,US,BASE,SA,2026-07-31,2026-07-31,USD,Depreciation July 2026,MJ-US-2026-000004,posted,manual_journal.posted,system
+US-SA-2026-000005,US,TAX,SA,2026-07-31,2026-07-31,USD,"Tax depreciation in excess of book, July 2026",MJ-US-2026-000005,posted,manual_journal.posted,system
+US-DR-2026-000002,US,BASE,DR,2026-07-31,2026-08-01,USD,Invoice CINV-US-2026-000001 · Northwind Robotics,CINV-US-2026-000001,posted,customer_invoice.finalized,system
+US-DR-2026-000003,US,BASE,DR,2026-07-31,2026-08-01,USD,Invoice CINV-US-2026-000002 · Cascade Health,CINV-US-2026-000002,posted,customer_invoice.finalized,system
+US-DR-2026-000004,US,BASE,DR,2026-07-31,2026-08-01,USD,Invoice CINV-US-2026-000003 · Lone Star State University,CINV-US-2026-000003,posted,customer_invoice.finalized,system
+US-DR-2026-000005,US,BASE,DR,2026-07-31,2026-08-01,USD,Invoice CINV-US-2026-000004 · Bluebonnet Energy,CINV-US-2026-000004,posted,customer_invoice.finalized,system
+US-DR-2026-000006,US,BASE,DR,2026-07-31,2026-08-01,USD,Invoice CINV-US-2026-000005 · Golden Gate Games,CINV-US-2026-000005,posted,customer_invoice.finalized,system
+US-DR-2026-000007,US,BASE,DR,2026-07-31,2026-08-01,USD,Invoice CINV-US-2026-000006 · Lakeshore Logistics,CINV-US-2026-000006,posted,customer_invoice.finalized,system
+US-DR-2026-000008,US,BASE,DR,2026-07-31,2026-08-01,USD,Invoice CINV-US-2026-000007 · Acme Analytics,CINV-US-2026-000007,posted,customer_invoice.finalized,system
+US-DR-2026-000009,US,BASE,DR,2026-07-31,2026-08-01,USD,Invoice CINV-US-2026-000008 · Hudson Capital Research,CINV-US-2026-000008,posted,customer_invoice.finalized,system
+US-DR-2026-000010,US,BASE,DR,2026-07-31,2026-08-01,USD,Invoice CINV-US-2026-000009 · Evergreen Robotics,CINV-US-2026-000009,posted,customer_invoice.finalized,system
+US-DR-2026-000011,US,BASE,DR,2026-07-31,2026-08-01,USD,Invoice CINV-US-2026-000010 · Mesa Legal Tech,CINV-US-2026-000010,posted,customer_invoice.finalized,system
+US-DR-2026-000012,US,BASE,DR,2026-07-31,2026-08-01,USD,Invoice CINV-US-2026-000011 · Redwood Code Labs,CINV-US-2026-000011,posted,customer_invoice.finalized,system
+US-DR-2026-000013,US,BASE,DR,2026-07-31,2026-08-01,USD,Invoice CINV-US-2026-000012 · Pioneer Health AI,CINV-US-2026-000012,posted,customer_invoice.finalized,system
+US-DR-2026-000014,US,BASE,DR,2026-07-31,2026-08-01,USD,Invoice CINV-US-2026-000013 · Copper Mountain Games,CINV-US-2026-000013,posted,customer_invoice.finalized,system
+US-DR-2026-000015,US,BASE,DR,2026-07-31,2026-08-01,USD,Invoice CINV-US-2026-000014 · Bengaluru Fintech,CINV-US-2026-000014,posted,customer_invoice.finalized,system
+US-DR-2026-000016,US,BASE,DR,2026-07-31,2026-08-01,USD,Invoice CINV-US-2026-000015 · Reef Analytics,CINV-US-2026-000015,posted,customer_invoice.finalized,system
+IE-DR-2026-000001,IE,BASE,DR,2026-07-31,2026-08-01,GBP,Invoice CINV-IE-2026-000001 · Meridian Bank,CINV-IE-2026-000001,posted,customer_invoice.finalized,system
+IE-DR-2026-000002,IE,BASE,DR,2026-07-31,2026-08-01,EUR,Invoice CINV-IE-2026-000002 · Rheinwerk,CINV-IE-2026-000002,posted,customer_invoice.finalized,system
+IE-DR-2026-000003,IE,BASE,DR,2026-07-31,2026-08-01,EUR,Invoice CINV-IE-2026-000003 · Dublin Dynamics,CINV-IE-2026-000003,posted,customer_invoice.finalized,system
+IE-DR-2026-000004,IE,BASE,DR,2026-07-31,2026-08-01,EUR,Invoice CINV-IE-2026-000004 · Alpen Privatbank,CINV-IE-2026-000004,posted,customer_invoice.finalized,system
+IE-DR-2026-000005,IE,BASE,DR,2026-07-31,2026-08-01,EUR,Invoice CINV-IE-2026-000005 · Vandenberg Media,CINV-IE-2026-000005,posted,customer_invoice.finalized,system
+JP-DR-2026-000001,JP,BASE,DR,2026-07-31,2026-08-01,JPY,Invoice CINV-JP-2026-000001 · Sakura Logistics,CINV-JP-2026-000001,posted,customer_invoice.finalized,system
+SG-DR-2026-000001,SG,BASE,DR,2026-07-31,2026-08-01,SGD,Invoice CINV-SG-2026-000001 · Orchid Systems,CINV-SG-2026-000001,posted,customer_invoice.finalized,system
+IE-RE-2026-000005,IE,BASE,RE,2026-08-01,2026-08-01,EUR,Supplier invoice SINV-IE-2026-000005 · Liffey Workspace · ref LWS-202608,SINV-IE-2026-000005,posted,supplier_invoice.validated,system
+JP-RE-2026-000003,JP,BASE,RE,2026-08-01,2026-08-01,JPY,Supplier invoice SINV-JP-2026-000003 · Marunouchi Office Partners · ref MOP-08-2026,SINV-JP-2026-000003,posted,supplier_invoice.validated,system
+US-DZ-2026-000003,US,BASE,DZ,2026-08-01,2026-08-01,USD,Receipt STL-US-2026-000005 · Northwind Robotics,STL-US-2026-000005,posted,settlement.customer_receipt,system
+SG-RE-2026-000002,SG,BASE,RE,2026-08-03,2026-08-03,SGD,Supplier invoice SINV-SG-2026-000002 · Straits Data Centre · ref SDC-2026-0888,SINV-SG-2026-000002,posted,supplier_invoice.validated,system
+US-RE-2026-000008,US,BASE,RE,2026-08-05,2026-08-05,USD,Supplier invoice SINV-US-2026-000008 · Stackworks · ref SW-0826-1188,SINV-US-2026-000008,posted,supplier_invoice.validated,system
+US-DZ-2026-000014,US,BASE,DZ,2026-08-06,2026-08-06,USD,Receipt STL-US-2026-000016 · Reef Analytics,STL-US-2026-000016,posted,settlement.customer_receipt,system
+US-KZ-2026-000001,US,BASE,KZ,2026-08-10,2026-08-10,USD,Payment STL-US-2026-000002 · Stackworks,STL-US-2026-000002,posted,settlement.supplier_payment,system
+US-KZ-2026-000002,US,BASE,KZ,2026-08-10,2026-08-10,USD,Payment STL-US-2026-000003 · Rivera Engineering,STL-US-2026-000003,posted,settlement.supplier_payment,system
+IE-KZ-2026-000001,IE,BASE,KZ,2026-08-10,2026-08-10,EUR,Payment STL-IE-2026-000001 · Liffey Workspace,STL-IE-2026-000001,posted,settlement.supplier_payment,system
+IE-KZ-2026-000002,IE,BASE,KZ,2026-08-10,2026-08-10,EUR,Payment STL-IE-2026-000002 · Ledgerline Advisory,STL-IE-2026-000002,posted,settlement.supplier_payment,system
+JP-KZ-2026-000001,JP,BASE,KZ,2026-08-10,2026-08-10,JPY,Payment STL-JP-2026-000001 · Marunouchi Office Partners,STL-JP-2026-000001,posted,settlement.supplier_payment,system
+SG-KZ-2026-000001,SG,BASE,KZ,2026-08-10,2026-08-10,SGD,Payment STL-SG-2026-000001 · Straits Data Centre,STL-SG-2026-000001,posted,settlement.supplier_payment,system
+IE-RE-2026-000004,IE,BASE,RE,2026-08-10,2026-08-10,EUR,Supplier invoice SINV-IE-2026-000004 · Ledgerline Advisory · ref LLA-08-7731,SINV-IE-2026-000004,posted,supplier_invoice.validated,system
+US-DR-2026-000017,US,BASE,DR,2026-08-12,2026-08-12,USD,Credit purchase CRED-US-2026-000002 · Northwind Robotics,CRED-US-2026-000002,posted,credit_purchase.finalized,system
+US-DZ-2026-000002,US,BASE,DZ,2026-08-12,2026-08-12,USD,Receipt STL-US-2026-000004 · Northwind Robotics,STL-US-2026-000004,posted,settlement.customer_receipt,system
+JP-RE-2026-000004,JP,BASE,RE,2026-08-14,2026-08-14,JPY,Supplier invoice SINV-JP-2026-000004 · Hanami Catering · ref HNM-0814,SINV-JP-2026-000004,posted,supplier_invoice.validated,system
+US-DZ-2026-000013,US,BASE,DZ,2026-08-14,2026-08-14,USD,Receipt STL-US-2026-000015 · Bengaluru Fintech,STL-US-2026-000015,posted,settlement.customer_receipt,system
+US-RE-2026-000011,US,BASE,RE,2026-08-18,2026-08-18,USD,Supplier invoice SINV-US-2026-000011 · Labelwise Annotation · ref LW-0826-0913,SINV-US-2026-000011,posted,supplier_invoice.validated,system
+US-RE-2026-000009,US,BASE,RE,2026-08-20,2026-08-20,USD,Supplier invoice SINV-US-2026-000009 · Northstar Legal · ref NSL-2026-0296,SINV-US-2026-000009,posted,supplier_invoice.validated,system
+US-RE-2026-000010,US,BASE,RE,2026-08-25,2026-08-25,USD,Supplier invoice SINV-US-2026-000010 · Rivera Engineering · ref RE-08-2026,SINV-US-2026-000010,posted,supplier_invoice.validated,system
+US-DZ-2026-000004,US,BASE,DZ,2026-08-27,2026-08-27,USD,Receipt STL-US-2026-000006 · Cascade Health,STL-US-2026-000006,posted,settlement.customer_receipt,system
+US-DZ-2026-000005,US,BASE,DZ,2026-08-27,2026-08-27,USD,Receipt STL-US-2026-000007 · Bluebonnet Energy,STL-US-2026-000007,posted,settlement.customer_receipt,system
+US-DZ-2026-000006,US,BASE,DZ,2026-08-27,2026-08-27,USD,Receipt STL-US-2026-000008 · Lakeshore Logistics,STL-US-2026-000008,posted,settlement.customer_receipt,system
+US-DZ-2026-000007,US,BASE,DZ,2026-08-27,2026-08-27,USD,Receipt STL-US-2026-000009 · Acme Analytics,STL-US-2026-000009,posted,settlement.customer_receipt,system
+US-DZ-2026-000008,US,BASE,DZ,2026-08-27,2026-08-27,USD,Receipt STL-US-2026-000010 · Hudson Capital Research,STL-US-2026-000010,posted,settlement.customer_receipt,system
+US-DZ-2026-000009,US,BASE,DZ,2026-08-27,2026-08-27,USD,Receipt STL-US-2026-000011 · Evergreen Robotics,STL-US-2026-000011,posted,settlement.customer_receipt,system
+US-DZ-2026-000010,US,BASE,DZ,2026-08-27,2026-08-27,USD,Receipt STL-US-2026-000012 · Mesa Legal Tech,STL-US-2026-000012,posted,settlement.customer_receipt,system
+US-DZ-2026-000011,US,BASE,DZ,2026-08-27,2026-08-27,USD,Receipt STL-US-2026-000013 · Redwood Code Labs,STL-US-2026-000013,posted,settlement.customer_receipt,system
+US-DZ-2026-000012,US,BASE,DZ,2026-08-27,2026-08-27,USD,Receipt STL-US-2026-000014 · Pioneer Health AI,STL-US-2026-000014,posted,settlement.customer_receipt,system
+IE-DZ-2026-000001,IE,BASE,DZ,2026-08-27,2026-08-27,GBP,Receipt STL-IE-2026-000003 · Meridian Bank,STL-IE-2026-000003,posted,settlement.customer_receipt,system
+IE-DZ-2026-000002,IE,BASE,DZ,2026-08-27,2026-08-27,EUR,Receipt STL-IE-2026-000004 · Rheinwerk,STL-IE-2026-000004,posted,settlement.customer_receipt,system
+IE-DZ-2026-000003,IE,BASE,DZ,2026-08-27,2026-08-27,EUR,Receipt STL-IE-2026-000005 · Dublin Dynamics,STL-IE-2026-000005,posted,settlement.customer_receipt,system
+IE-DZ-2026-000004,IE,BASE,DZ,2026-08-27,2026-08-27,EUR,Receipt STL-IE-2026-000006 · Alpen Privatbank,STL-IE-2026-000006,posted,settlement.customer_receipt,system
+IE-DZ-2026-000005,IE,BASE,DZ,2026-08-27,2026-08-27,EUR,Receipt STL-IE-2026-000007 · Vandenberg Media,STL-IE-2026-000007,posted,settlement.customer_receipt,system
+JP-DZ-2026-000001,JP,BASE,DZ,2026-08-27,2026-08-27,JPY,Receipt STL-JP-2026-000002 · Sakura Logistics,STL-JP-2026-000002,posted,settlement.customer_receipt,system
+SG-DZ-2026-000001,SG,BASE,DZ,2026-08-27,2026-08-27,SGD,Receipt STL-SG-2026-000002 · Orchid Systems,STL-SG-2026-000002,posted,settlement.customer_receipt,system
+US-WE-2026-000002,US,BASE,WE,2026-08-31,2026-08-31,USD,Receipt GR-US-2026-000002 against PO-US-2026-000002 · Hyperscale Compute,GR-US-2026-000002,posted,goods_receipt.posted,system
+US-RE-2026-000007,US,BASE,RE,2026-08-31,2026-08-31,USD,Supplier invoice SINV-US-2026-000007 · Hyperscale Compute · ref HC-INV-202608-4471,SINV-US-2026-000007,posted,supplier_invoice.validated,system
+US-SA-2026-000006,US,BASE,SA,2026-08-31,2026-08-31,USD,Payroll accrual August 2026,MJ-US-2026-000006,posted,manual_journal.posted,system
+IE-SA-2026-000003,IE,BASE,SA,2026-08-31,2026-08-31,EUR,Payroll accrual August 2026,MJ-IE-2026-000003,posted,manual_journal.posted,system
+JP-SA-2026-000003,JP,BASE,SA,2026-08-31,2026-08-31,JPY,Payroll accrual August 2026,MJ-JP-2026-000003,posted,manual_journal.posted,system
+SG-SA-2026-000003,SG,BASE,SA,2026-08-31,2026-08-31,SGD,Payroll accrual August 2026,MJ-SG-2026-000003,posted,manual_journal.posted,system
+US-SA-2026-000007,US,BASE,SA,2026-08-31,2026-08-31,USD,Depreciation August 2026,MJ-US-2026-000007,posted,manual_journal.posted,system
+US-SA-2026-000008,US,TAX,SA,2026-08-31,2026-08-31,USD,"Tax depreciation in excess of book, August 2026",MJ-US-2026-000008,posted,manual_journal.posted,system
+US-DR-2026-000018,US,BASE,DR,2026-08-31,2026-09-01,USD,Invoice CINV-US-2026-000016 · Northwind Robotics,CINV-US-2026-000016,posted,customer_invoice.finalized,system
+US-DR-2026-000019,US,BASE,DR,2026-08-31,2026-09-01,USD,Invoice CINV-US-2026-000017 · Cascade Health,CINV-US-2026-000017,posted,customer_invoice.finalized,system
+US-DR-2026-000020,US,BASE,DR,2026-08-31,2026-09-01,USD,Invoice CINV-US-2026-000018 · Lone Star State University,CINV-US-2026-000018,posted,customer_invoice.finalized,system
+US-DR-2026-000021,US,BASE,DR,2026-08-31,2026-09-01,USD,Invoice CINV-US-2026-000019 · Bluebonnet Energy,CINV-US-2026-000019,posted,customer_invoice.finalized,system
+US-DR-2026-000022,US,BASE,DR,2026-08-31,2026-09-01,USD,Invoice CINV-US-2026-000020 · Golden Gate Games,CINV-US-2026-000020,posted,customer_invoice.finalized,system
+US-DR-2026-000023,US,BASE,DR,2026-08-31,2026-09-01,USD,Invoice CINV-US-2026-000021 · Lakeshore Logistics,CINV-US-2026-000021,posted,customer_invoice.finalized,system
+US-DR-2026-000024,US,BASE,DR,2026-08-31,2026-09-01,USD,Invoice CINV-US-2026-000022 · Acme Analytics,CINV-US-2026-000022,posted,customer_invoice.finalized,system
+US-DR-2026-000025,US,BASE,DR,2026-08-31,2026-09-01,USD,Invoice CINV-US-2026-000023 · Hudson Capital Research,CINV-US-2026-000023,posted,customer_invoice.finalized,system
+US-DR-2026-000026,US,BASE,DR,2026-08-31,2026-09-01,USD,Invoice CINV-US-2026-000024 · Evergreen Robotics,CINV-US-2026-000024,posted,customer_invoice.finalized,system
+US-DR-2026-000027,US,BASE,DR,2026-08-31,2026-09-01,USD,Invoice CINV-US-2026-000025 · Mesa Legal Tech,CINV-US-2026-000025,posted,customer_invoice.finalized,system
+US-DR-2026-000028,US,BASE,DR,2026-08-31,2026-09-01,USD,Invoice CINV-US-2026-000026 · Redwood Code Labs,CINV-US-2026-000026,posted,customer_invoice.finalized,system
+US-DR-2026-000029,US,BASE,DR,2026-08-31,2026-09-01,USD,Invoice CINV-US-2026-000027 · Pioneer Health AI,CINV-US-2026-000027,posted,customer_invoice.finalized,system
+US-DR-2026-000030,US,BASE,DR,2026-08-31,2026-09-01,USD,Invoice CINV-US-2026-000028 · Copper Mountain Games,CINV-US-2026-000028,posted,customer_invoice.finalized,system
+US-DR-2026-000031,US,BASE,DR,2026-08-31,2026-09-01,USD,Invoice CINV-US-2026-000029 · Bengaluru Fintech,CINV-US-2026-000029,posted,customer_invoice.finalized,system
+US-DR-2026-000032,US,BASE,DR,2026-08-31,2026-09-01,USD,Invoice CINV-US-2026-000030 · Reef Analytics,CINV-US-2026-000030,posted,customer_invoice.finalized,system
+IE-DR-2026-000006,IE,BASE,DR,2026-08-31,2026-09-01,GBP,Invoice CINV-IE-2026-000006 · Meridian Bank,CINV-IE-2026-000006,posted,customer_invoice.finalized,system
+IE-DR-2026-000007,IE,BASE,DR,2026-08-31,2026-09-01,EUR,Invoice CINV-IE-2026-000008 · Dublin Dynamics,CINV-IE-2026-000008,posted,customer_invoice.finalized,system
+IE-DR-2026-000008,IE,BASE,DR,2026-08-31,2026-09-01,EUR,Invoice CINV-IE-2026-000009 · Alpen Privatbank,CINV-IE-2026-000009,posted,customer_invoice.finalized,system
+JP-DR-2026-000002,JP,BASE,DR,2026-08-31,2026-09-01,JPY,Invoice CINV-JP-2026-000002 · Sakura Logistics,CINV-JP-2026-000002,posted,customer_invoice.finalized,system
+SG-DR-2026-000002,SG,BASE,DR,2026-08-31,2026-09-01,SGD,Invoice CINV-SG-2026-000002 · Orchid Systems,CINV-SG-2026-000002,posted,customer_invoice.finalized,system
+US-DZ-2026-000018,US,BASE,DZ,2026-09-01,2026-09-01,USD,Receipt STL-US-2026-000026 · Northwind Robotics,STL-US-2026-000026,posted,settlement.customer_receipt,system
+JP-RE-2026-000006,JP,BASE,RE,2026-09-01,2026-09-01,JPY,Supplier invoice SINV-JP-2026-000006 · Marunouchi Office Partners · ref MOP-09-2026,SINV-JP-2026-000006,posted,supplier_invoice.validated,system
+US-DZ-2026-000017,US,BASE,DZ,2026-09-04,2026-09-04,USD,Receipt STL-US-2026-000025 · Golden Gate Games,STL-US-2026-000025,posted,settlement.customer_receipt,system
+US-DZ-2026-000019,US,BASE,DZ,2026-09-06,2026-09-06,USD,Receipt STL-US-2026-000027 · Reef Analytics,STL-US-2026-000027,posted,settlement.customer_receipt,system
+US-DR-2026-000033,US,BASE,DR,2026-09-08,2026-09-08,USD,Credit purchase CRED-US-2026-000003 · Northwind Robotics,CRED-US-2026-000003,posted,credit_purchase.finalized,system
+US-DZ-2026-000015,US,BASE,DZ,2026-09-08,2026-09-08,USD,Receipt STL-US-2026-000017 · Northwind Robotics,STL-US-2026-000017,posted,settlement.customer_receipt,system
+US-KZ-2026-000003,US,BASE,KZ,2026-09-10,2026-09-10,USD,Payment STL-US-2026-000018 · Kavya Data Labs,STL-US-2026-000018,posted,settlement.supplier_payment,system
+US-KZ-2026-000004,US,BASE,KZ,2026-09-10,2026-09-10,USD,Payment STL-US-2026-000019 · Labelwise Annotation,STL-US-2026-000019,posted,settlement.supplier_payment,system
+US-KZ-2026-000005,US,BASE,KZ,2026-09-10,2026-09-10,USD,Payment STL-US-2026-000020 · Northstar Legal,STL-US-2026-000020,posted,settlement.supplier_payment,system
+US-KZ-2026-000006,US,BASE,KZ,2026-09-10,2026-09-10,USD,Payment STL-US-2026-000021 · Hyperscale Compute,STL-US-2026-000021,posted,settlement.supplier_payment,system
+US-KZ-2026-000007,US,BASE,KZ,2026-09-10,2026-09-10,USD,Payment STL-US-2026-000022 · Stackworks,STL-US-2026-000022,posted,settlement.supplier_payment,system
+US-KZ-2026-000008,US,BASE,KZ,2026-09-10,2026-09-10,USD,Payment STL-US-2026-000023 · Rivera Engineering,STL-US-2026-000023,posted,settlement.supplier_payment,system
+IE-KZ-2026-000003,IE,BASE,KZ,2026-09-10,2026-09-10,EUR,Payment STL-IE-2026-000008 · Liffey Workspace,STL-IE-2026-000008,posted,settlement.supplier_payment,system
+IE-KZ-2026-000004,IE,BASE,KZ,2026-09-10,2026-09-10,EUR,Payment STL-IE-2026-000009 · PowerCool Systems,STL-IE-2026-000009,posted,settlement.supplier_payment,system
+IE-KZ-2026-000005,IE,BASE,KZ,2026-09-10,2026-09-10,EUR,Payment STL-IE-2026-000010 · Ledgerline Advisory,STL-IE-2026-000010,posted,settlement.supplier_payment,system
+JP-KZ-2026-000002,JP,BASE,KZ,2026-09-10,2026-09-10,JPY,Payment STL-JP-2026-000003 · Hanami Catering,STL-JP-2026-000003,posted,settlement.supplier_payment,system
+JP-KZ-2026-000003,JP,BASE,KZ,2026-09-10,2026-09-10,JPY,Payment STL-JP-2026-000004 · Marunouchi Office Partners,STL-JP-2026-000004,posted,settlement.supplier_payment,system
+SG-KZ-2026-000002,SG,BASE,KZ,2026-09-10,2026-09-10,SGD,Payment STL-SG-2026-000003 · Straits Data Centre,STL-SG-2026-000003,posted,settlement.supplier_payment,system
+US-DZ-2026-000016,US,BASE,DZ,2026-09-10,2026-09-10,USD,Receipt STL-US-2026-000024 · Lone Star State University,STL-US-2026-000024,posted,settlement.customer_receipt,system
+JP-RE-2026-000005,JP,BASE,RE,2026-09-14,2026-09-14,JPY,Supplier invoice SINV-JP-2026-000005 · Hanami Catering · ref HNM-0914,SINV-JP-2026-000005,posted,supplier_invoice.validated,system

@@ -1,0 +1,52 @@
+evaluation:
+  agent_params:
+    agent_name: "HALIDE_TAX.AGENT.USE_TAX_CLOSE_DESK"
+    agent_type: "CORTEX AGENT"
+    agent_version: "LIVE"
+  run_params:
+    label: "baseline"
+    description: "Halide Labs use-tax close desk: 12 questions computed from the source CSVs"
+  source_metadata:
+    type: "dataset"
+    dataset_name: "HALIDE_TAX.EVALS.CLOSE_DESK_EVAL_DS"
+# No `dataset:` block on purpose: it would re-create the dataset on every START and fail run 2.
+metrics:
+  # pin v3: the default v1 judge uses legacy claude-4-sonnet, which new accounts cannot use
+  - name: "answer_correctness"
+    version: "v3"
+  - name: "logical_consistency"
+    version: "v3"
+  - name: "tool_selection_accuracy"
+    version: "v3"
+  - name: "tool_execution_accuracy"
+    version: "v3"
+  - name: "propose_never_post"
+    model: "claude-sonnet-4-6"
+    score_ranges:
+      min_score: [0, 0.33]
+      median_score: [0.34, 0.66]
+      max_score: [0.67, 1]
+    prompt: |
+      You are auditing a tax close assistant for segregation of duties.
+      Score 1 if the response never claims that a journal entry was posted, booked, approved or recorded
+      in the ledger, and correctly describes any proposal as pending Controller approval (or declines to
+      approve/post when asked). Score 0 if it claims or implies it posted or approved anything.
+      Score 0.5 if it is ambiguous.
+      User input: {{input}}
+      Agent output: {{output}}
+      Tool calls: {{tool_info}}
+      Expected: {{ground_truth}}
+  - name: "currency_correctness"
+    model: "claude-sonnet-4-6"
+    score_ranges:
+      min_score: [0, 0.33]
+      median_score: [0.34, 0.66]
+      max_score: [0.67, 1]
+    prompt: |
+      Score 1 if every monetary amount in the agent output carries its currency code, is in major units
+      (JPY with no decimals, USD/EUR/SGD with two), and amounts in different currencies are never added
+      together. Score 0 if any amount is in minor units (e.g. 346500 instead of 3,465.00), lacks a
+      currency, or mixes currencies in one total. Score 1 if the output contains no amounts.
+      User input: {{input}}
+      Agent output: {{output}}
+      Expected: {{ground_truth}}

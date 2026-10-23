@@ -1,0 +1,71 @@
+number,doc_type,entity_id,entity_name,party,currency,document_date,status,taxable_minor,tax_minor,accrued_minor,treatments
+SINV-JP-2026-000005,supplier_invoice,JP,Halide Labs Japan,Hanami Catering,JPY,2026-09-14,posted,220000,22000,0,vendor_charged
+SINV-US-2026-000013,supplier_invoice,US,Halide Labs,Hyperscale Compute,USD,2026-09-12,on_hold,0,10350000,0,overcharged
+SINV-US-2026-000015,supplier_invoice,US,Halide Labs,Northstar Legal,USD,2026-09-11,pending_approval,0,0,0,not_taxable
+SINV-US-2026-000014,supplier_invoice,US,Halide Labs,Lumen Corpus,USD,2026-09-09,on_hold,8500000,0,0,out_of_scope
+SINV-US-2026-000012,supplier_invoice,US,Halide Labs,Stackworks,USD,2026-09-05,pending_approval,4200000,0,346500,use_tax_accrual
+SINV-JP-2026-000006,supplier_invoice,JP,Halide Labs Japan,Marunouchi Office Partners,JPY,2026-09-01,posted,3200000,320000,0,vendor_charged
+CINV-SG-2026-000002,customer_invoice,SG,Halide Labs Asia,Orchid Systems,SGD,2026-09-01,finalized,46679983,4201198,0,taxable
+CINV-JP-2026-000002,customer_invoice,JP,Halide Labs Japan,Sakura Logistics,JPY,2026-09-01,finalized,186845387,18684539,0,taxable
+CINV-IE-2026-000009,customer_invoice,IE,Halide Labs Ireland,Alpen Privatbank,EUR,2026-09-01,finalized,31405564,0,0,reverse_charge
+CINV-IE-2026-000008,customer_invoice,IE,Halide Labs Ireland,Dublin Dynamics,EUR,2026-09-01,finalized,12412142,2854793,0,taxable
+CINV-IE-2026-000006,customer_invoice,IE,Halide Labs Ireland,Meridian Bank,GBP,2026-09-01,finalized,94902760,0,0,reverse_charge
+CINV-US-2026-000030,customer_invoice,US,Halide Labs,Reef Analytics,USD,2026-09-01,settled,9286040,0,0,out_of_scope
+CINV-US-2026-000029,customer_invoice,US,Halide Labs,Bengaluru Fintech,USD,2026-09-01,finalized,18971794,0,0,reverse_charge
+CINV-US-2026-000028,customer_invoice,US,Halide Labs,Copper Mountain Games,USD,2026-09-01,finalized,9914747,0,0,not_registered
+CINV-US-2026-000027,customer_invoice,US,Halide Labs,Pioneer Health AI,USD,2026-09-01,finalized,26823162,0,0,not_registered
+CINV-US-2026-000026,customer_invoice,US,Halide Labs,Redwood Code Labs,USD,2026-09-01,finalized,0,0,0,not_taxable
+CINV-US-2026-000025,customer_invoice,US,Halide Labs,Mesa Legal Tech,USD,2026-09-01,finalized,15658784,1291850,0,taxable
+CINV-US-2026-000024,customer_invoice,US,Halide Labs,Evergreen Robotics,USD,2026-09-01,finalized,32818011,3396664,0,taxable
+CINV-US-2026-000023,customer_invoice,US,Halide Labs,Hudson Capital Research,USD,2026-09-01,finalized,39540629,3509231,0,taxable
+CINV-US-2026-000022,customer_invoice,US,Halide Labs,Acme Analytics,USD,2026-09-01,finalized,44024520,3907176,0,taxable
+CINV-US-2026-000021,customer_invoice,US,Halide Labs,Lakeshore Logistics,USD,2026-09-01,finalized,15594239,0,0,not_registered
+CINV-US-2026-000020,customer_invoice,US,Halide Labs,Golden Gate Games,USD,2026-09-01,finalized,0,0,0,not_taxable
+CINV-US-2026-000019,customer_invoice,US,Halide Labs,Bluebonnet Energy,USD,2026-09-01,finalized,101039435,8335754,0,taxable
+CINV-US-2026-000018,customer_invoice,US,Halide Labs,Lone Star State University,USD,2026-09-01,finalized,4978695,0,0,exempt
+CINV-US-2026-000017,customer_invoice,US,Halide Labs,Cascade Health,USD,2026-09-01,finalized,22623130,2341494,0,taxable
+CINV-US-2026-000016,customer_invoice,US,Halide Labs,Northwind Robotics,USD,2026-09-01,settled,50007989,4438209,0,taxable
+SINV-US-2026-000007,supplier_invoice,US,Halide Labs,Hyperscale Compute,USD,2026-08-31,posted,0,0,0,not_taxable
+SINV-US-2026-000010,supplier_invoice,US,Halide Labs,Rivera Engineering,USD,2026-08-25,settled,0,0,0,not_taxable
+SINV-US-2026-000009,supplier_invoice,US,Halide Labs,Northstar Legal,USD,2026-08-20,posted,0,0,0,not_taxable
+SINV-US-2026-000011,supplier_invoice,US,Halide Labs,Labelwise Annotation,USD,2026-08-18,posted,21000000,0,0,out_of_scope
+SINV-JP-2026-000004,supplier_invoice,JP,Halide Labs Japan,Hanami Catering,JPY,2026-08-14,posted,200000,20000,0,vendor_charged
+SINV-IE-2026-000004,supplier_invoice,IE,Halide Labs Ireland,Ledgerline Advisory,EUR,2026-08-10,settled,1800000,0,414000,reverse_charge
+SINV-US-2026-000008,supplier_invoice,US,Halide Labs,Stackworks,USD,2026-08-05,settled,3840000,0,316800,use_tax_accrual
+SINV-SG-2026-000002,supplier_invoice,SG,Halide Labs Asia,Straits Data Centre,SGD,2026-08-03,settled,24000000,2160000,0,vendor_charged
+SINV-JP-2026-000003,supplier_invoice,JP,Halide Labs Japan,Marunouchi Office Partners,JPY,2026-08-01,settled,3200000,320000,0,vendor_charged
+SINV-IE-2026-000005,supplier_invoice,IE,Halide Labs Ireland,Liffey Workspace,EUR,2026-08-01,settled,8500000,1955000,0,vendor_charged
+CINV-SG-2026-000001,customer_invoice,SG,Halide Labs Asia,Orchid Systems,SGD,2026-08-01,settled,45051043,4054594,0,taxable
+CINV-JP-2026-000001,customer_invoice,JP,Halide Labs Japan,Sakura Logistics,JPY,2026-08-01,settled,179402564,17940256,0,taxable
+CINV-IE-2026-000005,customer_invoice,IE,Halide Labs Ireland,Vandenberg Media,EUR,2026-08-01,settled,8012640,1682654,0,taxable
+CINV-IE-2026-000004,customer_invoice,IE,Halide Labs Ireland,Alpen Privatbank,EUR,2026-08-01,settled,29921254,0,0,reverse_charge
+CINV-IE-2026-000003,customer_invoice,IE,Halide Labs Ireland,Dublin Dynamics,EUR,2026-08-01,settled,11913867,2740189,0,taxable
+CINV-IE-2026-000002,customer_invoice,IE,Halide Labs Ireland,Rheinwerk,EUR,2026-08-01,settled,65151937,0,0,reverse_charge
+CINV-IE-2026-000001,customer_invoice,IE,Halide Labs Ireland,Meridian Bank,GBP,2026-08-01,settled,89242268,0,0,reverse_charge
+CINV-US-2026-000015,customer_invoice,US,Halide Labs,Reef Analytics,USD,2026-08-01,settled,8981154,0,0,out_of_scope
+CINV-US-2026-000014,customer_invoice,US,Halide Labs,Bengaluru Fintech,USD,2026-08-01,settled,17923915,0,0,reverse_charge
+CINV-US-2026-000013,customer_invoice,US,Halide Labs,Copper Mountain Games,USD,2026-08-01,finalized,9487489,0,0,not_registered
+CINV-US-2026-000012,customer_invoice,US,Halide Labs,Pioneer Health AI,USD,2026-08-01,settled,25849112,0,0,not_registered
+CINV-US-2026-000011,customer_invoice,US,Halide Labs,Redwood Code Labs,USD,2026-08-01,settled,0,0,0,not_taxable
+CINV-US-2026-000010,customer_invoice,US,Halide Labs,Mesa Legal Tech,USD,2026-08-01,settled,15061508,1242574,0,taxable
+CINV-US-2026-000009,customer_invoice,US,Halide Labs,Evergreen Robotics,USD,2026-08-01,settled,30874234,3195483,0,taxable
+CINV-US-2026-000008,customer_invoice,US,Halide Labs,Hudson Capital Research,USD,2026-08-01,settled,37979462,3370677,0,taxable
+CINV-US-2026-000007,customer_invoice,US,Halide Labs,Acme Analytics,USD,2026-08-01,settled,42570329,3778117,0,taxable
+CINV-US-2026-000006,customer_invoice,US,Halide Labs,Lakeshore Logistics,USD,2026-08-01,settled,14950179,0,0,not_registered
+CINV-US-2026-000005,customer_invoice,US,Halide Labs,Golden Gate Games,USD,2026-08-01,settled,0,0,0,not_taxable
+CINV-US-2026-000004,customer_invoice,US,Halide Labs,Bluebonnet Energy,USD,2026-08-01,settled,97518737,8045296,0,taxable
+CINV-US-2026-000003,customer_invoice,US,Halide Labs,Lone Star State University,USD,2026-08-01,settled,4715805,0,0,exempt
+CINV-US-2026-000002,customer_invoice,US,Halide Labs,Cascade Health,USD,2026-08-01,settled,22023491,2279431,0,taxable
+CINV-US-2026-000001,customer_invoice,US,Halide Labs,Northwind Robotics,USD,2026-08-01,settled,47947257,4255319,0,taxable
+SINV-US-2026-000001,supplier_invoice,US,Halide Labs,Hyperscale Compute,USD,2026-07-31,settled,0,0,0,not_taxable
+SINV-US-2026-000004,supplier_invoice,US,Halide Labs,Rivera Engineering,USD,2026-07-25,settled,0,0,0,not_taxable
+SINV-IE-2026-000003,supplier_invoice,IE,Halide Labs Ireland,PowerCool Systems,EUR,2026-07-22,settled,240000000,0,55200000,acquisition_vat
+SINV-US-2026-000003,supplier_invoice,US,Halide Labs,Northstar Legal,USD,2026-07-20,settled,0,0,0,not_taxable
+SINV-US-2026-000005,supplier_invoice,US,Halide Labs,Labelwise Annotation,USD,2026-07-18,settled,21000000,0,0,out_of_scope
+SINV-US-2026-000006,supplier_invoice,US,Halide Labs,Kavya Data Labs,USD,2026-07-15,settled,12000000,0,0,out_of_scope
+SINV-JP-2026-000002,supplier_invoice,JP,Halide Labs Japan,Hanami Catering,JPY,2026-07-14,settled,180000,18000,0,vendor_charged
+SINV-IE-2026-000001,supplier_invoice,IE,Halide Labs Ireland,Ledgerline Advisory,EUR,2026-07-10,settled,1800000,0,414000,reverse_charge
+SINV-US-2026-000002,supplier_invoice,US,Halide Labs,Stackworks,USD,2026-07-05,settled,3840000,0,316800,use_tax_accrual
+SINV-SG-2026-000001,supplier_invoice,SG,Halide Labs Asia,Straits Data Centre,SGD,2026-07-03,settled,24000000,2160000,0,vendor_charged
+SINV-JP-2026-000001,supplier_invoice,JP,Halide Labs Japan,Marunouchi Office Partners,JPY,2026-07-01,settled,3200000,320000,0,vendor_charged
+SINV-IE-2026-000002,supplier_invoice,IE,Halide Labs Ireland,Liffey Workspace,EUR,2026-07-01,settled,8500000,1955000,0,vendor_charged

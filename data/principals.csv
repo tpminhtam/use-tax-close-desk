@@ -1,0 +1,8 @@
+id,kind,display_name,title,roles
+claude,agent,Claude,Finance assistant (AI agent),agent:assistant
+daniel.okafor,human,Daniel Okafor,Controller,controller|ap_approver|gl_accountant|treasury
+maya.chen,human,Maya Chen,Accounts Payable Specialist,ap_clerk
+priya.raman,human,Priya Raman,Senior Manager,tax_reviewer|tax_analyst
+sam.lee,human,Sam Lee,Revenue Accountant,ar_clerk|billing_ops|gl_accountant
+tam.tran,human,Tam Tran,Tax Technology Engineer,tax_technology|tax_reviewer|tax_analyst
+system,system,myERP,System,system

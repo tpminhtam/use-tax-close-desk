@@ -1,0 +1,228 @@
+version: "2026.09.1"
+description: >
+  Business process definitions (ADR-017). Steps are ordered; each names the kinds of actor
+  (human, agent, system) and the roles that may perform it. Segregation-of-duties rules are
+  evaluated on every attempt, and blocked attempts are recorded as process history.
+
+# Evaluated in this order; the first rule that denies explains the refusal, so the agent rule comes first.
+sod_rules:
+  - id: SOD-02
+    name: Agents propose, humans decide
+    applies_to: [approve, post]
+    deny_when: "actor.kind == 'agent'"
+    message: >
+      {actor.display_name} is an AI agent. Agents may capture, match, determine tax and run
+      assurance checks; approving and posting belong to a person or to the system after a person approves.
+    why: >
+      An agent is a principal with a role, like a person. Making it a first-class actor lets the
+      control framework say exactly what it may do, and lets an auditor test that it cannot approve.
+
+  - id: SOD-01
+    name: The preparer cannot approve
+    applies_to: [approve]
+    deny_when: "actor.id == document.created_by"
+    message: "{actor.display_name} prepared {document.number}. Segregation of duties requires a different approver."
+    why: >
+      Maker-checker is the most tested control in procure-to-pay. Oracle Approvals Management,
+      Workday business process conditions and SAP flexible workflow all support it; myERP evaluates
+      it on every attempt and keeps the blocked attempt as evidence that the control operated.
+
+  - id: SOD-03
+    name: Self-assessed tax and withholding need a tax reviewer
+    applies_to: [approve]
+    deny_when: "document.needs_tax_review and 'tax_reviewer' not in actor.roles"
+    message: >
+      {document.number} self-assesses tax or withholds tax ({document.tax_review_reason}).
+      Approval needs the tax_reviewer role, which {actor.display_name} does not have.
+    why: >
+      Use-tax accruals, reverse charge and withholding create tax liabilities the vendor did not
+      invoice. A tax reviewer signs off before they hit the ledger.
+
+  - id: SOD-04
+    name: Manual postings to restricted accounts need the controller
+    applies_to: [approve]
+    deny_when: "document.touches_restricted_accounts and 'controller' not in actor.roles"
+    message: >
+      {document.number} posts to a restricted account ({document.restricted_accounts}); only the controller may approve it.
+    why: >
+      Tax payable and deferred revenue balances are fed by subledgers. A manual journal against
+      them bypasses the tax engine, so it needs the controller and will surface in the indirect tax tie-out.
+
+definitions:
+  supplier_invoice:
+    name: Supplier invoice
+    comparable:
+      oracle: "Payables invoice: validation (holds) + Approvals Management (AMX) + Create Accounting"
+      workday: "Supplier Invoice business process with approval chain and condition rules"
+      sap: "MIRO invoice verification with blocking reasons + flexible workflow for invoice approval"
+      netsuite: "Vendor Bill approval routing (SuiteFlow) with 3-way match"
+    steps:
+      - code: capture
+        kind: system
+        name: Capture
+        description: Registered with a gap-free number from an e-invoice, PDF extraction or manual entry.
+        actor_kinds: [human, agent, system]
+      - code: match
+        kind: validate
+        name: Match
+        description: Two- or three-way match against the purchase order and receipt, within tolerance.
+        actor_kinds: [agent, system]
+      - code: determine_tax
+        kind: validate
+        name: Determine tax
+        description: PurchaseInvoice determination; compares vendor-charged tax with expected tax.
+        actor_kinds: [agent, system]
+      - code: assure
+        kind: assure
+        name: Assurance checks
+        description: Duplicate check, tax variance, tax documentation (W-9 / W-8) and registration checks.
+        actor_kinds: [agent, system]
+      - code: approve
+        kind: approve
+        name: Approve
+        description: Required above the approval threshold, for self-assessed tax, and when a hold was released.
+        roles: [ap_approver, controller, tax_reviewer]
+        actor_kinds: [human]
+        when: "document.requires_approval"
+      - code: post
+        kind: post
+        name: Create accounting
+        description: Final accounting into the universal journal.
+        actor_kinds: [system]
+
+  config_change:
+    name: Configuration change
+    comparable:
+      oracle: "Setup and Maintenance tasks with Functional Setup Manager export/import between environments"
+      workday: "Business process definition changes via tenant configuration, moved with Object Transporter"
+      sap: "Customising transport requests moved through the DEV \u2192 QA \u2192 PRD landscape"
+      netsuite: "SuiteCloud SDF project deployed between account environments"
+    steps:
+      - code: propose
+        kind: capture
+        name: Propose
+        description: A branch is opened and the rule is changed there. Nothing is in force yet.
+        actor_kinds: [human, agent, system]
+      - code: check
+        kind: assure
+        name: Impact check
+        description: Real documents are replayed through both configurations and the money difference is reported.
+        actor_kinds: [human, agent, system]
+      - code: approve
+        kind: approve
+        name: Approve and merge
+        description: A person accepts the change. Merging moves the configuration in force.
+        roles: [tax_reviewer, controller]
+        actor_kinds: [human]
+      - code: post
+        kind: post
+        name: Take effect
+        description: The merge commit becomes main; every later determination uses it.
+        actor_kinds: [system]
+
+  customer_invoice:
+    name: Customer invoice
+    comparable:
+      oracle: "Receivables transaction (or AutoInvoice) completed, tax calculated by Fusion Tax or a tax partner"
+      workday: "Customer Invoice business process"
+      sap: "SD billing document release to accounting"
+      netsuite: "Invoice with SuiteTax calculation"
+    steps:
+      - code: capture
+        kind: system
+        name: Rate and draft
+        description: Usage rated from frozen aggregates, credits applied in grant order, draft created.
+        actor_kinds: [human, agent, system]
+      - code: determine_tax
+        kind: validate
+        name: Quote tax
+        description: Advisory tax on the draft (SalesInvoice quote).
+        actor_kinds: [agent, system]
+      - code: post
+        kind: post
+        name: Finalize
+        description: Tax committed, invoice immutable, accounting final.
+        actor_kinds: [human, system]
+
+  credit_purchase:
+    name: Prepaid credit purchase
+    comparable:
+      oracle: "Receivables invoice to a contract liability"
+      workday: "Customer invoice with deferred revenue"
+      sap: "Billing document to a contract liability"
+      netsuite: "Invoice with deferred revenue"
+    steps:
+      - code: capture
+        kind: system
+        name: Capture
+        actor_kinds: [human, agent, system]
+      - code: post
+        kind: post
+        name: Finalize and grant credits
+        actor_kinds: [human, system]
+
+  manual_journal:
+    name: Manual journal
+    comparable:
+      oracle: "Journal approval (AMX) before posting"
+      workday: "Journal Entry business process with approval"
+      sap: "Park (FV50) and post by a second user"
+      netsuite: "Journal approval routing"
+    steps:
+      - code: prepare
+        kind: system
+        name: Prepare
+        actor_kinds: [human, agent, system]
+      - code: validate
+        kind: validate
+        name: Validate coding and period
+        actor_kinds: [human, agent, system]
+      - code: approve
+        kind: approve
+        name: Approve
+        roles: [controller, gl_accountant]
+        actor_kinds: [human]
+      - code: post
+        kind: post
+        name: Post
+        actor_kinds: [system]
+
+  settlement:
+    name: Settlement
+    comparable:
+      oracle: "Receipt application / payment"
+      workday: "Settlement run / customer payment"
+      sap: "Clearing document (F-28, F-53, F110)"
+      netsuite: "Customer Payment / Bill Payment"
+    steps:
+      - code: prepare
+        kind: system
+        name: Prepare
+        actor_kinds: [human, agent, system]
+      - code: post
+        kind: post
+        name: Post and clear
+        actor_kinds: [system]
+
+  payment_run:
+    name: Payment run
+    comparable:
+      oracle: "Payment Process Request: selection, proposal review, payments"
+      workday: "Settlement Run with approval"
+      sap: "F110: parameters, proposal, proposal review, payment run"
+      netsuite: "Bill Payment batch with approval"
+    steps:
+      - code: propose
+        kind: system
+        name: Propose
+        description: Select due invoices, compute withholding, build the proposal.
+        actor_kinds: [human, agent, system]
+      - code: approve
+        kind: approve
+        name: Approve proposal
+        roles: [controller, treasury]
+        actor_kinds: [human]
+      - code: post
+        kind: post
+        name: Pay and clear
+        actor_kinds: [system]

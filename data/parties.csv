@@ -1,0 +1,36 @@
+id,name,party_type,roles,country,default_currency,industry
+C-ACME,Acme Analytics,business,['customer'],US,USD,Analytics
+C-ALPEN,Alpen Privatbank,business,['customer'],CH,EUR,Private banking
+C-BENGALURU,Bengaluru Fintech,business,['customer'],IN,USD,Fintech
+C-BLUEBONNET,Bluebonnet Energy,business,['customer'],US,USD,Energy
+C-CASCADE,Cascade Health,business,['customer'],US,USD,Healthcare
+C-COPPER,Copper Mountain Games,business,['customer'],US,USD,Gaming
+C-DUBLINDYN,Dublin Dynamics,business,['customer'],IE,EUR,Software
+C-EVERGREEN,Evergreen Robotics,business,['customer'],US,USD,Robotics
+C-GOLDENGATE,Golden Gate Games,business,['customer'],US,USD,Gaming
+S-HANAMI,Hanami Catering,business,['supplier'],JP,,Catering
+C-HUDSON,Hudson Capital Research,business,['customer'],US,USD,Financial services
+S-HYPERSCALE,Hyperscale Compute,business,['supplier'],US,,Cloud infrastructure
+S-KAVYA,Kavya Data Labs,business,['supplier'],IN,,Dataset licensing
+S-LABELWISE,Labelwise Annotation,business,['supplier'],GB,,Data labeling
+C-LAKESHORE,Lakeshore Logistics,business,['customer'],US,USD,Logistics
+S-LEDGERLINE,Ledgerline Advisory,business,['supplier'],GB,,Tax advisory
+S-LIFFEY,Liffey Workspace,business,['supplier'],IE,,Workspace services
+C-LONESTAR,Lone Star State University,government,['customer'],US,USD,Higher education
+S-LUMEN,Lumen Corpus,business,['supplier'],GB,,Dataset licensing
+S-MARUNOUCHI,Marunouchi Office Partners,business,['supplier'],JP,,Office services
+C-MERIDIAN,Meridian Bank,business,['customer'],GB,GBP,Banking
+C-MESA,Mesa Legal Tech,business,['customer'],US,USD,Legal tech
+S-NORTHSTAR,Northstar Legal,business,['supplier'],US,,Legal services
+C-NORTHWIND,Northwind Robotics,business,['customer'],US,USD,Robotics
+C-ORCHID,Orchid Systems,business,['customer'],SG,SGD,Semiconductors
+C-PIONEER,Pioneer Health AI,business,['customer'],US,USD,Healthcare
+S-POWERCOOL,PowerCool Systems,business,['supplier'],DE,,Data center equipment
+C-REDWOOD,Redwood Code Labs,business,['customer'],US,USD,Developer tools
+C-REEF,Reef Analytics,business,['customer'],AU,USD,Analytics
+C-RHEINWERK,Rheinwerk,business,['customer'],DE,EUR,Industrial automation
+S-RIVERA,Rivera Engineering,business,['supplier'],US,,Engineering contractors
+C-SAKURA,Sakura Logistics,business,['customer'],JP,JPY,Logistics
+S-STACKWORKS,Stackworks,business,['supplier'],US,,Software
+S-STRAITS,Straits Data Centre,business,['supplier'],SG,,Data centers
+C-VANDENBERG,Vandenberg Media,business,['customer'],NL,EUR,Media
